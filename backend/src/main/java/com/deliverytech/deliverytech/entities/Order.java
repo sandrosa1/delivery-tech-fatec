@@ -14,6 +14,8 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import org.springframework.security.access.method.P;
+
 @Entity
 @Table(name = "tb_order")
 public class Order implements Serializable{
@@ -95,6 +97,14 @@ public class Order implements Serializable{
 
 	public void setStatus(OrderStatus status) {
 		this.status = status;
+	}
+	
+	public Double getTotal() {
+		double sum = 0.0;
+		for (Product p : products) {
+			sum += p.getPrice();		
+		}
+		return sum;
 	}
 
 	public Set<Product> getProducts() {
