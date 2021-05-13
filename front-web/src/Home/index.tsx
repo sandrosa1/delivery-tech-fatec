@@ -1,5 +1,6 @@
 import './styles.css';
-import { ReactComponent as MainImage } from './main.svg'
+// import { ReactComponent as MainImage } from './main.svg'
+import MainImage from './home_img3.png';
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ function Home() {
                         <Link to="/orders" className="home-btn-order">FAZER PEDIDO</Link>
                     </div>
                     <div className="home-image">
-                        <MainImage />
+                        <img className="home-image-resize" src={MainImage} alt='Logo da aplicação' />
                     </div>
                 </div>
 
