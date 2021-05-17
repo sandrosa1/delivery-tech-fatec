@@ -1,11 +1,11 @@
 # delivery-tech-fatec
 
 ## Modelo conceitual
-![Image](https://https://raw.githubusercontent.com/sandrosa1/arquivos/main/asset/modelo-conceitual.png "Modelo conceitual")
+![Image](https://github.com//sandrosa1/arquivos/main/asset/modelo-conceitual.png "Modelo conceitual")
 
 ## Padrão camadas adotado
 
-![Image](https://raw.githubusercontent.com/sandrosa1/arquivos/main/asset/padrao-de-camadas.png "Padrão camadas")
+![Image](https://github.com//sandrosa1/arquivos/main/asset/padrao-de-camadas.png "Padrão camadas")
 
 ## Checklist
 
