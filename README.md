@@ -5,7 +5,7 @@
 
 ## Padrão camadas adotado
 
-![Image](https://raw.githubusercontent.com/devsuperior/sds2/master/assets/camadas.png "Padrão camadas")
+![Image](https://raw.githubusercontent.com/sandrosa1/arquivos/blob/main/asset/modelo-conceitual.png "Padrão camadas")
 
 ## Checklist
 
