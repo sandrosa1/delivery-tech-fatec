@@ -9,7 +9,7 @@
 
 ## Diagrama de componentes
 
-![Image](https://raw.githubusercontent.com/devsuperior/sds2/master/assets/diagrama.jpeg "Padrão camadas")
+![Image](https://raw.githubusercontent.com/devsuperior/sds2/master/asset/diagrama.jpeg "Padrão camadas")
 
 ## Checklist
 
