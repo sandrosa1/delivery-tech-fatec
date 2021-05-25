@@ -7,6 +7,10 @@
 
 ![Image](https://github.com/sandrosa1/arquivos/blob/main/asset/camadas.png "Padrão camadas")
 
+## Diagrama de componentes
+
+![Image](https://raw.githubusercontent.com/devsuperior/sds2/master/assets/diagrama.jpeg "Padrão camadas")
+
 ## Checklist
 
 - Setup inicial do projeto
