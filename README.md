@@ -9,7 +9,7 @@
 
 ## Diagrama de componentes
 
-![Image](https://raw.githubusercontent.com/devsuperior/sds2/master/asset/diagrama.jpeg "Padrão camadas")
+![Image](https://github.com/sandrosa1/arquivos/blob/main/asset/diagrama.jpeg "Padrão camadas")
 
 ## Checklist
 
