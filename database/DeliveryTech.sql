@@ -135,12 +135,12 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 			    	('Cristiane' ,'11-954895360',,120),--11,40
 			    	('Roberto'   ,'11-954895361',,120),--11,40
 
---Abertura da pizzaria 2021-04-02 19:00:00.000 Sexta feira--
---Abertura da pizzaria 2021-04-03 19:00:00.000 Sabado feira--
---Abertura da pizzaria 2021-04-04 19:00:00.000 Domingo feira--
---Abertura da pizzaria 2021-04-06 19:00:00.000 Terça feira--
---Abertura da pizzaria 2021-04-07 19:00:00.000 Quarta feira--
---Abertura da pizzaria 2021-04-08 19:00:00.000 Quinta feira--
+--Abertura da pizzaria 2021-04-02 19:00:00.000 Sexta feira-- Sandro
+--Abertura da pizzaria 2021-04-03 19:00:00.000 Sabado feira-- Carol
+--Abertura da pizzaria 2021-04-04 19:00:00.000 Domingo feira-- Rafael
+--Abertura da pizzaria 2021-04-06 19:00:00.000 Terça feira-- Carol
+--Abertura da pizzaria 2021-04-07 19:00:00.000 Quarta feira-- Rafael
+--Abertura da pizzaria 2021-04-08 19:00:00.000 Quinta feira-- Sandro
 --Abertura da pizzaria 2021-04-09 19:00:00.000 Sexta feira--
 --Abertura da pizzaria 2021-04-10 19:00:00.000 Sabado feira--
 --Abertura da pizzaria 2021-04-11 19:00:00.000 Domingo feira--
