@@ -323,43 +323,45 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
                     ('Elisa'     ,'11-997414917','R. Profa. Maria Antônia Constancia, 105 - Esplanada Mendes Moraes, São Roque - SP, 18130-770, Brasil'        ,-23.5298451,-47.1318728,                   '2021-04-06 19:20:00.000',62),--8	
 
                     --Abertura da pizzaria 2021-04-20 19:00:00.000 Terça feira-- Carol
+										
+					('Sabrina'      ,'11-991413514','R. Honorio M. de Moraes, 100 - Esplanada Mendes Moraes, São Roque - SP, 18130-760, Brasil'                                 ,-23.5342766,-47.1392441,                     '2021-04-20 19:20:00.000',104), --12, 14
+					('Tânia'      ,'11-996823512','R. Amador Bueno, 56 - Centro, São Roque - SP, 18130-320, Brasil'                                 ,-23.5306357,-47.146874,                     '2021-04-20 19:30:00.000',79), --1, 37
+					('Fernando'      ,'11-985613579','R. Barão de Piratininga, 186 - Centro, São Roque - SP, 18130-270, Brasil'                                 ,-23.5336901,-47.1475721,                     '2021-04-20 19:38:00.000',50), --15
+					('Fernando'      ,'11-996399847','R. Barão de Piratininga, 78 - Centro, São Roque - SP, 18130-270, Brasil'                                 ,-23.5327386,-47.1471933,                     '2021-04-20 19:45:00.000',55), --5
+					('Daniel'      ,'11-996399847','Rua Ângelo Meneguesso, 240 - Centro, São Roque - SP, 18130-375, Brasil'                                 ,-23.5322257,-47.1480169,                     '2021-04-20 19:47:00.000',70), --10
+					('Thiago'      ,'11-996921807','R. Manoel José Ferreira - Marmeleiro, São Roque - SP, 18120-000, Brasil'      				               ,-23.535409, -47.160054,                    '2021-04-20 20:18:00.000',78), --10,25
+					('Renata'      ,'11-996324678','R. Maestro Porfírio Taváres, 102-298 - Jardim Maria Trindade, São Roque - SP, Brasil'      		           ,-23.518529, -47.126278,                    '2021-04-20 20:36:00.000',80), --15,28x2,29x2
+					('André'       ,'11-994475231','R. Epaminondas de Oliveira, 12-132 - Centro, São Roque - SP, 18130-505, Brasil'      		               ,-23.526265, -47.134675,                    '2021-04-20 21:03:00.000',126), --17,40
+
                     --Abertura da pizzaria 2021-04-21 19:00:00.000 Quarta feira--
                     --Abertura da pizzaria 2021-04-22 19:00:00.000 Quinta feira--
                     --Abertura da pizzaria 2021-04-23 19:00:00.000 Sexta feira--
                     --Abertura da pizzaria 2021-04-24 19:00:00.000 Sabado feira-- Carol
+			    	('Jair'      ,'11-954895365','R. Tamandaré, 63 - Vila Sao Rafael, São Roque - SP, 18131-500, Brasil'                                        ,-23.532264614370607, -47.1506505087018,   '2021-04-24 19:10:00.000',138),--8, 16,22
+			    	('Clecio'    ,'11-954895366','R. Primeiro-Sargento A Aparecido Pereira, 350 - Jardim Conceiçao, São Roque - SP, 18136-490, Brasil'          ,-23.551010563733737,  -47.136614844202995,'2021-04-24 19:12:00.000',60),--15,22
+			    	('Maria'     ,'11-954895367','R. Padre Antônio Viêira, 71 - Paisagem Colonial, São Roque - SP, 18136-730, Brasil'                           ,-23.560269132348232, -47.146134339272976, '2021-04-24 19:18:00.000',68),--7,25
+			    	('Lucio'     ,'11-954895368','Av. Guilherme de Almeida, 80 - Sao Roque, São Roque - SP, 18135-660, Brasil'                                  ,-23.559611757072517, -47.12792918086051,  '2021-04-24 19:22:00.000',78),--15,4*32
+			    	('Daniela'   ,'11-954895368','R. São Tibúrcio, 93 - Jardim Villaca, São Roque - SP, 18135-260, Brasil'                                      ,-23.554321287649234, -47.12225899100303,  '2021-04-24 19:30:00.000',51),--12,
+			    	('Samara'    ,'11-954895369','R. João Colo, 17 - Parque Primavera, São Roque - SP, 18135-590, Brasil'                                       ,-23.560308470268833, -47.11494058370591,  '2021-04-24 19:33:00.000',64),--5,24
+			    	('Lindalvo'  ,'11-938541048'  ,'R. São Joaquim, 100 - Sao Roque, São Roque - SP, 18130-220, Brasil'                                        ,-23.534602010104486,  -47.138254679739475,  '2021-04-24 19:15:00.000',151),--11,12,36
+			    	('Andre'     ,'11-956021428'  ,'R. Tomás Antônio Gonzaga, 325 - Paisagem Colonial, São Roque - SP, 18136-700, Brasil'                      ,-23.557902381564233,  -47.14839577674865 ,  '2021-04-24 19:40:00.000',71),--15, 28x3
+			    	('Geraldo'   ,'11-976362387'  ,'R. Primeiro-Sargento A Aparecido Pereira, 100 - Jardim Conceicao, São Roque - SP, 18136-490, Brasil'       ,-23.55038080370918,   -47.138280160725124,  '2021-04-24 19:41:00.000',66),--13,22
+			    	('Ana'       ,'11-954895379'  ,'R. Ten. Francisco Luís de Campos, 231 - Vila Junqueira, São Roque - SP, 18136-120, Brasil'                 ,-23.53865854112339,   -47.133923918008804,  '2021-04-24 19:48:00.000',58),--2
+			    	('Celma'     ,'11-954895389','R. São José, 205 - Jardim Sao Jose, São Roque - SP, 18133-255, Brasil'                                        ,-23.51485518160395,   -47.13278565555811, '2021-04-24 19:55:00.000',52),--3,
+			    	('Helio'     ,'11-954895390','BR-272, 1325 - Taboão, São Roque - SP, 18135-125, Brasil'                                                     ,-23.542411573883093,  -47.125645279884345,'2021-04-24 20:03:00.000',50),--15,
+			    	('Robson'    ,'11-954895391','R. Minas Gerais, 240 - Vila Irene, São Roque - SP, 18132-080, Brasil'                                         ,-23.524010853023483,  -47.138444781303406,'2021-04-24 20:08:00.000',110),--11,31*4
+			    	('Nicolle'     ,'11-972828484','Av. Gérson Nastri, 163-197 - Vila Santa Rita, São Roque - SP, 18130-700, Brasil'      			           ,-23.530424, -47.128567,                    '2021-04-24 20:19:00.000',61), --12,22
+			    	('Otavio'      ,'11-976559877','R. Barra Bonita, 2-64 - Vila Nova Sao Roque, São Roque - SP, 18131-215, Brasil'      			           ,-23.527752, -47.153366,                    '2021-04-24 20:39:00.000',67), --14,28x2
                     --Abertura da pizzaria 2021-04-25 19:00:00.000 Domingo feira--
                     --Abertura da pizzaria 2021-04-27 19:00:00.000 Terça feira-- Carol
+			    	('Gerson'    ,'11-954895358','R. Barão do Rio Branco, 445 - Vila Junqueira, São Roque - SP, 18130-020, Brasil'                              ,-23.538849115392434, -47.13492874056101,  '2021-04-27 19:10:00.000',70),--10
+			    	('Mariano'   ,'11-954895359','R. Tomás Antônio Gonzaga, 247 - Paisagem Colonial, São Roque - SP, 18136-700, Brasil'                         ,-23.556905081914525, -47.14863214641809,  '2021-04-27 19:10:00.000',142),--8,14,29*2,27
+			    	('Cristiane' ,'11-954895360','Av. João Pessoa, 378 - Centro, São Roque - SP, 18130-290, Brasil'                                             ,-23.532246785574436, -47.13871601969004,  '2021-04-27 19:15:00.000',76),--16,18
+			    	('José'      ,'11-954895361','R. Duque de Caxias, 240 - Centro, São Roque - SP, 18130-150, Brasil'                                          ,-23.53361221845325,  -47.13631343096495,  '2021-04-27 20:20:00.000',54),--9
+			    	('Lucas'     ,'11-954895362','R. Bento Antônio Pereira, 108 - Jardim Bela Vista, São Roque - SP, 18134-180, Brasil'                         ,-23.522456259856284, -47.13113375008106,  '2021-04-27 21:03:00.000',60),--6
                     --Abertura da pizzaria 2021-04-28 19:00:00.000 Quarta feira--
                     --Abertura da pizzaria 2021-04-29 19:00:00.000 Quinta feira--
                     --Abertura da pizzaria 2021-04-30 19:00:00.000 Sexta feira--
-
-                    --Abertura da pizzaria 2021-05-01 19:00:00.000 Sabado feira-- Carol 
-                    --Abertura da pizzaria 2021-04-02 19:00:00.000 Domingo feira--
-                    --Abertura da pizzaria 2021-04-04 19:00:00.000 Terça feira-- Carol
-                    --Abertura da pizzaria 2021-04-05 19:00:00.000 Quarta feira--
-                    --Abertura da pizzaria 2021-04-06 19:00:00.000 Quinta feira--
-                    --Abertura da pizzaria 2021-04-07 19:00:00.000 Sexta feira--
-                    --Abertura da pizzaria 2021-04-08 19:00:00.000 Sabado feira-- Carol
-                    --Abertura da pizzaria 2021-04-09 19:00:00.000 Domingo feira--
-                    --Abertura da pizzaria 2021-04-11 19:00:00.000 Terça feira-- Carol
-                    --Abertura da pizzaria 2021-04-12 19:00:00.000 Quarta feira--
-                    --Abertura da pizzaria 2021-04-13 19:00:00.000 Quinta feira--
-                    --Abertura da pizzaria 2021-04-14 19:00:00.000 Sexta feira--
-                    --Abertura da pizzaria 2021-04-15 19:00:00.000 Sabado feira-- Carol
-                    --Abertura da pizzaria 2021-04-16 19:00:00.000 Domingo feira--
-                    --Abertura da pizzaria 2021-04-18 19:00:00.000 Terça feira-- Carol
-                    --Abertura da pizzaria 2021-04-19 19:00:00.000 Quarta feira--
-                    --Abertura da pizzaria 2021-04-20 19:00:00.000 Quinta feira--
-                    --Abertura da pizzaria 2021-04-21 19:00:00.000 Sexta feira--
-                    --Abertura da pizzaria 2021-04-22 19:00:00.000 Sabado feira-- Carol
-                    --Abertura da pizzaria 2021-04-23 19:00:00.000 Domingo feira--
-                    --Abertura da pizzaria 2021-04-25 19:00:00.000 Terça feira-- Carol
-                    --Abertura da pizzaria 2021-04-26 19:00:00.000 Quarta feira--
-                    --Abertura da pizzaria 2021-04-27 19:00:00.000 Quinta feira--
-                    --Abertura da pizzaria 2021-04-28 19:00:00.000 Sexta feira--
-                    --Abertura da pizzaria 2021-04-29 19:00:00.000 Sabado feira-- Carol
-                    --Abertura da pizzaria 2021-04-30 19:00:00.000 Domingo feira--
-
 
 Go
 
