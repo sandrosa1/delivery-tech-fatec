@@ -352,6 +352,21 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
                     --Abertura da pizzaria 2021-04-20 19:00:00.000 Terça feira-- Carol
                     --Abertura da pizzaria 2021-04-21 19:00:00.000 Quarta feira--
                     --Abertura da pizzaria 2021-04-22 19:00:00.000 Quinta feira--
+					 --Abertura da pizzaria 2021-04-22 19:00:00.000 Quinta feira--
+					('Adriana','11-956712343','Rua Sabatini Alceste, 58, São Roque - SP, 18133-340, Brasil'                                                  ,-23.514590173507546,     -47.13417571038008 , '2021-04-22 19:10:00.000',65),--5,22
+					('Cintia','11-954738465','Rua Msr A Morais 55 - Vila Mike, São Roque - SP, 18136-220, Brasil'                                            ,-23.5432211821392,       -47.13324632495642 , '2021-04-22 19:50:00.000',66),--5,27
+					('Luana','11-923436543','R. Santa Augusta, 43 - Jardim Villaca, São Roque - SP, 18135-360, Brasil'                                       ,-23.547008816208614,     -47.11882844567299 , '2021-04-22 20:20:00.000',60),--15,22
+					('Yzoroku','11-967344221','R. Júlio Xavier Ferreira, 133 - Jardim Maria Trindade, São Roque - SP, 18133-440, Brasil'                     ,-23.51949642602654,      -47.12623938918114 , '2021-04-22 20:30:00.000',76),--8,19*2
+					('Constantino','11-911234434','R. Minas Gerais, 245 - Vila Irene, São Roque - SP, 18132-080, Brasil'                                     ,-23.524010853023483,     -47.138444781303406, '2021-04-22 20:40:00.000',60),--7
+					('Joaquim','11-974866443','R. João XXIII, 67 - Centro, São Roque - SP, 18130-180, Brasil'                                                ,-23.53264086288481,      -47.13515404611825 , '2021-04-22 20:45:00.000',100),--11,36
+					('Kyome','11-945555567','R. São José, 205 - Jardim Sao Jose, São Roque - SP, 18133-255, Brasil'                                          ,-23.51485518160395,      -47.13278565555811 , '2021-04-22 21:10:00.000',103),--1,31*4
+					('Pamela','11-954757773','Av. Antonio Pannellini, 211 - Taboão, São Roque - SP, 18135-131, Brasil'                                       ,-23.54373509944832,      -47.1220538020134  , '2021-04-22 21:30:00.000',54),--9
+					('Gilmar','11-9646677743','Av. das Palmeiras, 355 - Jardim Suiça Paulista, São Roque - SP, 18136-780, Brasil'                            ,-23.54111846486106,      -47.143758572638035, '2021-04-22 21:35:00.000',70),--10
+					('Laercio','11-955774443','R. Barão do Rio Branco, 448 - Vila Junqueira, São Roque - SP, 18130-020, Brasil'                              ,-23.538849115392434,     -47.13492874056101 , '2021-04-22 21:48:00.000',61),--12,22
+					('Gisele','11-957473521','R. João Colo, 20 - Parque Primavera, São Roque - SP, 18135-590, Brasil'                                        ,-23.560308470268833,     -47.11494058370591 , '2021-04-22 22:30:00.000',53),--14
+					('Raimundo','11-911122348','São Tibúrcio, 96 - Jardim Villaca, São Roque - SP, 18135-260, Brasil'                                        ,-23.554321287649234,     -47.12225899100303 , '2021-04-22 22:45:00.000',136),--17*38
+					('Flavio','11-946987896','R. Santa Leocádia, 98 - Jardim Villaca, São Roque - SP, 18135-310, Brasil'                                     ,-23.545953342682566,     -47.12087094783783 , '2021-04-22 23:30:00.000',50),--15
+
                     --Abertura da pizzaria 2021-04-23 19:00:00.000 Sexta feira--
                     --Abertura da pizzaria 2021-04-24 19:00:00.000 Sabado feira-- Carol
                     --Abertura da pizzaria 2021-04-25 19:00:00.000 Domingo feira--
