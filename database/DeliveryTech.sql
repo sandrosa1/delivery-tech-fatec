@@ -255,7 +255,7 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 
 --Abertura da pizzaria 2021-04-11 19:00:00.000 Domingo feira-- 
                     ('Anthony'     ,'11-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'       			           ,-23.525430, -47.151320,                     '2021-04-11 19:42:00.000',60), --7
-                    ('Fernando'    ,'R. Jacareí, 42-218 - Vila Nova Sao Roque, São Roque - SP, 18131-160, Brasil'                                              ,-23.526654, -47.155182,                     '2021-04-11 19:58:00.000',74), --2,29x2
+                    ('Fernando'    ,'11-954040544','R. Jacareí, 42-218 - Vila Nova Sao Roque, São Roque - SP, 18131-160, Brasil'                               ,-23.526654, -47.155182,                     '2021-04-11 19:58:00.000',74), --2,29x2
                     ('Anthony'     ,'Rua Msr Aguiar, 107 - Vila Mike, São Roque - SP, 18136-220, Brasil'       			                                       ,-23.543283, -47.132968,                     '2021-04-11 19:42:00.000',118), --1,9,27
                     ('Vicente'     ,'11-981539703','R. México, 121 - Vila Sao Rafael, São Roque - SP, 18131-453, Brasil'                                       ,-23.532236, -47.152230,                     '2021-04-06 19:20:00.000',60),--3,25
                     ('Emanuel'     ,'11-982627484','R. Dr. Silvério Moura García, 236 - Vila Santo Antonio, São Roque - SP, 18133-350, Brasil'                 ,-23.513484, -47.133281,                     '2021-04-04 20:59:00.000',66), --13,26
@@ -276,27 +276,28 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
                     ('Beatriz'     ,'11-973728822','R. Francisco da Silva Pontes, 139 - Jardim Florida, São Roque - SP, 18133-040, Brasil'       	           ,-23.520116, -47.132904,                     '2021-04-13 20:15:00.000',50), --15
                     ('Isaque'      ,'11-963737826','R. Chad Kaid, 176 - Jardim Sao Jose, São Roque - SP, 18133-250, Brasil'      					           ,-23.515384, -47.130244,                     '2021-04-13 20:25:00.000',66), --16
                     ('Anthony'     ,'11-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'       			           ,-23.525430, -47.151320,                     '2021-04-13 20:33:00.000',60), --7
-                    ('Thiago'    ,'11-954895387','R. das Rosas, 110 - Jardim Sao Jose, São Roque - SP, 18133-280, Brasil'                                      ,-23.515013817285826,  -47.13141404092311,   '2021-04-13 20:45:00.000',64),--2, 19
+                    ('Thiago'      ,'11-954895387','R. das Rosas, 110 - Jardim Sao Jose, São Roque - SP, 18133-280, Brasil'                                    ,-23.515013817285826,  -47.13141404092311,   '2021-04-13 20:45:00.000',64),--2, 19
 --Abertura da pizzaria 2021-04-14 19:00:00.000 Quarta feira-- 
-					('Amanda'      ,'11-991451870','R. Barão do Rio Branco, 2-162 - Centro, São Roque - SP, 18130-020, Brasil'                                 ,-23.536457, -47.134066,                     '2021-04-14 19:19:00',58), --15,25
-					('Anthony'     ,'11-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'                            ,-23.525430, -47.151320,                     '2021-04-14 19:42:00',60),
-					('Anthony'     ,'14-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'                            ,-23.525430, -47.151320,                     '2021-04-14 19:42:00',60),
-					('Anthony'     ,'14-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'                            ,-23.525430, -47.151320,                     '2021-04-14 19:42:00',60),
-					('Anthony'     ,'14-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'                            ,-23.525430, -47.151320,                     '2021-04-14 19:42:00',60),
-					('Anthony'     ,'14-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'                            ,-23.525430, -47.151320,                     '2021-04-14 19:42:00',60),
-					('Anthony'     ,'14-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'                            ,-23.525430, -47.151320,                     '2021-04-14 19:42:00',60),
-					('Anthony'     ,'14-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'       		               ,-23.525430, -47.151320,                     '2021-04-14 19:42:00',60),
+					('Amanda'      ,'11-991451870','R. Barão do Rio Branco, 2-162 - Centro, São Roque - SP, 18130-020, Brasil'                                 ,-23.536457, -47.134066,                     '2021-04-14 19:19:00.000',58), --15,25
+					('Zenilda'     ,'11-990898105','R. Silvio Edgar Rosa, 2-98 - Jardim Esther, São Roque - SP, 18131-070, Brasil'                             ,-23.531536, -47.140946,                     '2021-04-14 19:47:00.000',126), --1,4,26
+					('Pamela'      ,'11-994475231','R. Santa Pedrina, 49 - Jardim Villaca, São Roque - SP, 18135-410, Brasil'      		                        ,-23.545277, -47.122203,                    '2021-04-07 19:55:00.000',90), --5,28x5
+					('Nickolas'    ,'11-994165401','Rua Sabatini Alceste, 133-9, São Roque - SP, 18133-340, Brasil'                                            ,-23.515073, -47.134350,                     '2021-04-14 20:09:00.000',141), --5,12,28x5
+					('Eli'         ,'11-995751620','R. Juvenal Novaes, 44-156 - Parque Varanguera, São Roque - SP, 18132-560, Brasil'                          ,-23.510137, -47.143659,                     '2021-04-14 20:35:00.000',68), --14,18
+					('Luiza'       ,'11-999018410','R. Bernardino Pereira Leite, 1 - Jardim Maria Trindade, São Roque - SP, 18133-365, Brasil'                 ,-23.516374, -47.126421,                     '2021-04-14 20:57:00.000',91), --16,35
+					('Erica'       ,'11-998261048','Av. Três de Maio, 982 - Parque IX de Julho, São Roque - SP, 18133-445, Brasil'                             ,-23.519261, -47.127954,                     '2021-04-14 21:13:00.000',63), --1,26
+					('Sebastião'   ,'11-989402108','R. Francisco da Silva Pontes, 103 - Jardim Florida, São Roque - SP, 18133-040, Brasil'                     ,-23.520508, -47.133294,                     '2021-04-14 22:01:00.000',66), --15,29x2
+					('Emily'       ,'11-995594824','Rua Antônio Cavaglieri, 65 - Centro, São Roque - SP, 18130-065, Brasil'       		                       ,-23.533422, -47.139856,                     '2021-04-14 22:33:00.000',127), --2,7,23
 
 --Abertura da pizzaria 2021-04-15 19:00:00.000 Quinta feira-- 
 --Abertura da pizzaria 2021-04-16 19:00:00.000 Sexta feira-- 
 --Abertura da pizzaria 2021-04-17 19:00:00.000 Sabado feira-- Carol
-                    ('Lucio'     ,'11-954895368','Av. Guilherme de Almeida, 80 - Sao Roque, São Roque - SP, 18135-660, Brasil'                               ,-23.559611757072517, -47.12792918086051,      '2021-04-17 19:30:00.000',50),--15
-                    ('Daniela'   ,'11-954895368','R. São Tibúrcio, 93 - Jardim Villaca, São Roque - SP, 18135-260, Brasil'                                   ,-23.554321287649234, -47.12225899100303,      '2021-04-17 19:33:00.000',136),--17,38
-                    ('Samara'    ,'11-954895369','R. João Colo, 17 - Parque Primavera, São Roque - SP, 18135-590, Brasil'                                    ,-23.560308470268833, -47.11494058370591,      '2021-04-17 19:42:00.000',80),--15,31x3
-                    ('Giovanna','11-998581916','R. dos Carvalhos, 54 - Jardim Guacu, São Roque - SP, 18132-440, Brasil'                                      ,-23.514503,-47.1419799,                       '2021-04-17 20:15:00.000',110), -- 6,15
-                    ('Antonella','11-994231219','R. Santa Virgínia, 240 - Jardim Villaca, São Roque - SP, 18135-340, Brasil'                                 ,-23.5476301,-47.1214591,                      '2021-04-17 21:10:00.000',70), -- 7,26
-                    ('Geraldo','11-998581916','R. Cláudio de Souza, 129 - Vila Santa Rita, São Roque - SP, 18130-690, Brasil'                                ,-23.5301967,-47.1269538,                      '2021-04-17 21:12:00.000',72), -- 4,23
-                    ('Regina'      ,'11-975635521','R. Maria Guilhermina Lemos, 175-1 - Vila Junqueira, São Roque - SP, 18136-180, Brasil'  		         ,-23.541219, -47.132667,                       '2021-04-17 19:15:00.000',144), --11,7,23
+                    ('Lucio'     ,'11-954895368','Av. Guilherme de Almeida, 80 - Sao Roque, São Roque - SP, 18135-660, Brasil'                                 ,-23.559611757072517, -47.12792918086051,      '2021-04-17 19:30:00.000',50),--15
+                    ('Daniela'   ,'11-954895368','R. São Tibúrcio, 93 - Jardim Villaca, São Roque - SP, 18135-260, Brasil'                                     ,-23.554321287649234, -47.12225899100303,      '2021-04-17 19:33:00.000',136),--17,38
+                    ('Samara'    ,'11-954895369','R. João Colo, 17 - Parque Primavera, São Roque - SP, 18135-590, Brasil'                                      ,-23.560308470268833, -47.11494058370591,      '2021-04-17 19:42:00.000',80),--15,31x3
+                    ('Giovanna','11-998581916','R. dos Carvalhos, 54 - Jardim Guacu, São Roque - SP, 18132-440, Brasil'                                        ,-23.514503,-47.1419799,                       '2021-04-17 20:15:00.000',110), -- 6,15
+                    ('Antonella','11-994231219','R. Santa Virgínia, 240 - Jardim Villaca, São Roque - SP, 18135-340, Brasil'                                   ,-23.5476301,-47.1214591,                      '2021-04-17 21:10:00.000',70), -- 7,26
+                    ('Geraldo','11-998581916','R. Cláudio de Souza, 129 - Vila Santa Rita, São Roque - SP, 18130-690, Brasil'                                  ,-23.5301967,-47.1269538,                      '2021-04-17 21:12:00.000',72), -- 4,23
+                    ('Regina'      ,'11-975635521','R. Maria Guilhermina Lemos, 175-1 - Vila Junqueira, São Roque - SP, 18136-180, Brasil'  		           ,-23.541219, -47.132667,                       '2021-04-17 19:15:00.000',144), --11,7,23
                     --Abertura da pizzaria 2021-04-18 19:00:00.000 Domingo feira--
                     --Abertura da pizzaria 2021-04-20 19:00:00.000 Terça feira-- Carol
                     --Abertura da pizzaria 2021-04-21 19:00:00.000 Quarta feira--
