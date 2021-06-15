@@ -171,6 +171,8 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 
 --Abertura da pizzaria 2021-04-03 19:00:00.000 Sabado feira-- Carol
 --Abertura da pizzaria 2021-04-04 19:00:00.000 Domingo feira-- Rafael
+--azs
+
 --Abertura da pizzaria 2021-04-06 19:00:00.000 Terça feira-- Carol
 --Abertura da pizzaria 2021-04-07 19:00:00.000 Quarta feira-- Rafael
 --Abertura da pizzaria 2021-04-08 19:00:00.000 Quinta feira-- Sandro
