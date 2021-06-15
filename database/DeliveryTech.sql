@@ -98,7 +98,7 @@ Insert Into Produtos (Tipo, Categoria, Nome, Descricao, ValorProduto)
 					('Bebidas','Refrigerante','Fanta Laranja','2 litros',9.00),
 					('Bebidas','Refrigerante','Kuat','2 litros',8.00),
 					('Bebidas','Refrigerante','Coca zero','2 litros',10.00),
-					('Bebidas','Refrigerante','Guaran�','2 litros',11.00),
+					('Bebidas','Refrigerante','Guaraná','2 litros',11.00),
 					('Bebidas','Cerveja','Skol','Lata 350ml',7.00),
 					('Bebidas','Cerveja','Bhama','Lata 350ml',8.00),
 					('Bebidas','Cerveja','Paulistana','Lata 350ml',10.00),
@@ -110,8 +110,8 @@ Insert Into Produtos (Tipo, Categoria, Nome, Descricao, ValorProduto)
 					('Bebidas','Vinho','Goes','Tinto de mesa suave 720ml',25.00),
 					('Bebidas','Vinho','Goes','Tinto bordo 720ml',26.00),
 					('Bebidas','Vinho','Don Patto','Tinto seco merlot 750ml',55.00),
-					('Bebidas','Vinho','Don Patto','Patt�o branco de mesa de mesa 720ml',45.00),
-					('Bebidas','Vinho','Don Patto','Patt�o Tinto de mesa 720ml',45.00)														
+					('Bebidas','Vinho','Don Patto','Patto branco de mesa de mesa 720ml',45.00),
+					('Bebidas','Vinho','Don Patto','Patto Tinto de mesa 720ml',45.00)														
 Go
 
 
@@ -123,19 +123,52 @@ Go
 
 
 Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, TotalDoPedido )
---Abertura da pizzaria 2021-04-01 19:00:00.000 Quinta feira--
-			Values ('Edson'      ,'11-952453521','R. Gov. Carvalho Pinto, 538 - Jardim Boa Vista, São Roque - SP, 18132-380, Brasil'       ,-23.51784309561113, -47.145707197487354,'2021-04-01 18:30:00',68),--2,22
-			    	('Mariza'    ,'11-954895352','R. Paraguai, 174 - Vila Sao Rafael, São Roque - SP, 18131-475, Brasil'                   ,-23.53371580879795, -47.152799628674984,'2021-04-01 19:05:00',120),--11,40
-			    	('Joâo'      ,'11-954895354','R. Paulino Hermílio de Campos, 58 - Centro, São Roque - SP, 18130-385, Brasil'           ,-23.53009716835891, -47.13880117982625, '2021-04-01 19:20:00',120),--3,6,25
-			    	('Marcos'    ,'11-954895355','R. José Gômide de Castro, 127 - Jardim Maria Trindade, São Roque - SP, 18133-400, Brasil',-23.51821231456105,-47.126943469047546,'2021-04-01 19:40:00'120),--11,40
-			    	('Luciana'   ,'11-954895356',,120),--11,40
-			    	('Thereza'   ,'11-954895357',,120),--11,40
-			    	('Gerson'    ,'11-954895358',,120),--11,40
-			    	('Mariano'   ,'11-954895359',,120),--11,40
-			    	('Cristiane' ,'11-954895360',,120),--11,40
-			    	('Roberto'   ,'11-954895361',,120),--11,40
+					--Abertura da pizzaria 2021-04-01 19:00:00.000 Quinta feira--
+			Values ('Edson'      ,'11-952453521','R. Gov. Carvalho Pinto, 538 - Jardim Boa Vista, São Roque - SP, 18132-380, Brasil'                   ,-23.51784309561113,  -47.145707197487354, '2021-04-01 18:30:00.000',68 ),--2,22
+			    	('Mariza'    ,'11-954895352','R. Paraguai, 174 - Vila Sao Rafael, São Roque - SP, 18131-475, Brasil'                               ,-23.53371580879795,  -47.152799628674984, '2021-04-01 19:05:00.000',120),--11,40
+			    	('Joâo'      ,'11-954895354','R. Paulino Hermílio de Campos, 58 - Centro, São Roque - SP, 18130-385, Brasil'                       ,-23.53009716835891,  -47.13880117982625,  '2021-04-01 19:20:00.000',120),--3,6,25
+			    	('Marcos'    ,'11-954895355','R. José Gômide de Castro, 127 - Jardim Maria Trindade, São Roque - SP, 18133-400, Brasil'            ,-23.51821231456105,  -47.126943469047546, '2021-04-01 19:40:00.000',130),--11,38
+			    	('Luciana'   ,'11-954895356','R. João XXIII, 64 - Centro, São Roque - SP, 18130-180, Brasil'                                       ,-23.53264086288481,  -47.13515404611825,  '2021-04-01 19:55:00.000',108),--7,28*6
+			    	('Thereza'   ,'11-954895357','Rua Santa Cruz, 117 - Vila Santa Isabel, São Roque - SP, 18136-025, Brasil'                          ,-23.536778603376078, -47.13693100959063,  '2021-04-01 20:20:00.000',55),--5
+			    	('Gerson'    ,'11-954895358','R. Barão do Rio Branco, 445 - Vila Junqueira, São Roque - SP, 18130-020, Brasil'                     ,-23.538849115392434, -47.13492874056101,  '2021-04-01 20:30:00.000',70),--10
+			    	('Mariano'   ,'11-954895359','R. Tomás Antônio Gonzaga, 247 - Paisagem Colonial, São Roque - SP, 18136-700, Brasil'                ,-23.556905081914525, -47.14863214641809,  '2021-04-01 21:10:00.000',76),--16,18
+			    	('Cristiane' ,'11-954895360','Av. João Pessoa, 378 - Centro, São Roque - SP, 18130-290, Brasil'                                    ,-23.532246785574436, -47.13871601969004,  '2021-04-01 22:00:00.000',142),--8,14,29*2,27
+			    	('José'      ,'11-954895361','R. Duque de Caxias, 240 - Centro, São Roque - SP, 18130-150, Brasil'                                 ,-23.53361221845325,  -47.13631343096495,  '2021-04-01 22:40:00.000',54),--9
+			    	('Lucas'     ,'11-954895362','R. Bento Antônio Pereira, 108 - Jardim Bela Vista, São Roque - SP, 18134-180, Brasil'                ,-23.522456259856284, -47.13113375008106,  '2021-04-01 23:10:00.000',52),--3
+			    	('Lourdes'   ,'11-954895363','R. Amador Marquês da Silva, 206 - Vila Marques, São Roque - SP, 18130-545, Brasil'                   ,-23.536676244974018, -47.13959611952305,  '2021-04-01 23:32:00.000',50),--15
+			    	('Paulo'     ,'11-954895363','Av. das Palmeiras, 352 - Jardim Suiça Paulista, São Roque - SP, 18136-780, Brasil'                   ,-23.54111846486106,  -47.143758572638035, '2021-04-01 23:58:00.000',60)--15,22
+					--Abertura da pizzaria 2021-04-02 19:00:00.000 Sexta feira-- Sandro
+			    	('Jair'      ,'11-954895365','R. Tamandaré, 63 - Vila Sao Rafael, São Roque - SP, 18131-500, Brasil'                               ,-23.532264614370607, -47.1506505087018,   '2021-04-02 18:00:00.000',53)--2
+			    	('Clecio'    ,'11-954895366','R. Primeiro-Sargento A Aparecido Pereira, 350 - Jardim Conceiçao, São Roque - SP, 18136-490, Brasil' ,-23.551010563733737,  -47.136614844202995,'2021-04-02 18:10:00.000',60)--15,22
+			    	('Maria'     ,'11-954895367','R. Padre Antônio Viêira, 71 - Paisagem Colonial, São Roque - SP, 18136-730, Brasil'                  ,-23.560269132348232, -47.146134339272976, '2021-04-02 18:30:00.000',73)--8,25
+			    	('Lucio'     ,'11-954895368','Av. Guilherme de Almeida, 80 - Sao Roque, São Roque - SP, 18135-660, Brasil'                         ,-23.559611757072517, -47.12792918086051,  '2021-04-02 18:40:00.000',78)--15,4*32
+			    	('Daniela'   ,'11-954895368','R. São Tibúrcio, 93 - Jardim Villaca, São Roque - SP, 18135-260, Brasil'                             ,-23.554321287649234, -47.12225899100303,  '2021-04-02 19:00:00.000',51)--12,
+			    	('Samara'    ,'11-954895369','R. João Colo, 17 - Parque Primavera, São Roque - SP, 18135-590, Brasil'                              ,-23.560308470268833, -47.11494058370591,  '2021-04-02 19:10:00.000',60)--15,26
+			    	('Celio'     ,'11-954895370','R. João Paulo I, 206 - Jardim Mosteiro, São Roque - SP, 18135-490, Brasil'                           ,-23.54766287359399,  -47.117252983152866, '2021-04-02 19:20:00.000',68)--2,22
+			    	('Odair'     ,'11-954895371','R. Santa Leocádia, 95 - Jardim Villaca, São Roque - SP, 18135-310, Brasil'                           ,-23.545953342682566, -47.12087094783783,  '2021-04-02 19:30:00.000',74)--4,27
+			    	('Luiz'      ,'11-954895372','R. das Papoulas, 568 - Vila Santa Rosalia, São Roque - SP, 18136-185, Brasil'                        ,-23.54702510621119,   -47.13165711611509, '2021-04-02 19:30:00.000',85)--5,30*3
+			    	('Joel'      ,'11-954895373','Rua Msr A Morais 52 - Vila Mike, São Roque - SP, 18136-220, Brasil'                                  ,-23.5432211821392,    -47.13324632495642, '2021-04-02 19:42:00.000',82)--8,31,22
+			    	('Maria'     ,'11-954895374','R. José Bonifácio de Andrada e Silva, 150 - Jardim Meny, São Roque - SP, 18130-005, Brasil'          ,-23.53514147415779,   -47.13589802384377, '2021-04-02 19:43:00.000',56)--13,
+			    	('José'      ,'11-954895375','Av. Antonio Pannellini, 208 - Taboão, São Roque - SP, 18135-131, Brasil'                             ,-23.54373509944832,   -47.1220538020134,  '2021-04-02 19:48:00.000',126)--17,39
+			    	('Pedro'     ,'11-954895376','R. Irineu Silveira, 121 - Vila Junqueira, São Roque - SP, 18136-100, Brasil'                         ,-23.540818469127807,  -47.13398527354001, '2021-04-02 19:49:00.000',53)--1,
+			    	('alesandro' ,'11-954895377','R. Santa Augusta, 42 - Jardim Villaca, São Roque - SP, 18135-360, Brasil'                            ,-23.547008816208614,  -47.11882844567299, '2021-04-02 19:59:00.000',55)--15,18
+			    	('Mauro'     ,'11-954895378','Av. Antônio Maria Picena, 139 - Vila Junqueira, São Roque - SP, 18136-040, Brasil'                   ,-23.540026673823945,  -47.13616892695426, '2021-04-02 20:13:00.000',54)--9,
+			    	('Ana'       ,'11-954895379','R. Ten. Francisco Luís de Campos, 231 - Vila Junqueira, São Roque - SP, 18136-120, Brasil'           ,-23.53865854112339,   -47.133923918008804,'2021-04-02 20:15:00.000',70)--7,22
+			    	('Dolores'   ,'11-954895380','Rua Marechal Deodoro da Fonseca, 360 - Centro, São Roque - SP, 18130-070, Brasil'                    ,-23.534870359166487,  -47.13308103382588, '2021-04-02 20:21:00.000',53)--1,
+			    	('Marcio'    ,'11-954895381','R. Bento Antônio Pereira, 7 - Jardim Bela Vista, São Roque - SP, 18134-180, Brasil'                  ,-23.522989932825325,  -47.13158771395683, '2021-04-02 20:22:00.000',71)--7,27
+			    	('Mecias'    ,'11-954895382','R. Santa Pedrina, 107 - Jardim Villaca, São Roque - SP, 18135-410, Brasil'                           ,-23.546045243597153,  -47.12182179093361, '2021-04-02 20:23:00.000',50)--15,
+			    	('Jucemar'   ,'11-954895383','R. Maestro Porfírio Taváres, 335 - Jardim Maria Trindade, São Roque - SP, 18133-410, Brasil'         ,-23.518490227225822,  -47.12525971233845, '2021-04-02 20:29:00.000',55)--5,
+			    	('Wagner'    ,'11-954895384','R. Júlio Xavier Ferreira, 130 - Jardim Maria Trindade, São Roque - SP, 18133-440, Brasil'            ,-23.51949642602654,   -47.12623938918114, '2021-04-02 22:33:00.000',120)--11,39
+			    	('Adelia'    ,'11-954895384','R. João Pinto Splendore, 200, São Roque - SP, 18133-300, Brasil'                                     ,-23.51331093318866,   -47.129439264535904,'2021-04-02 22:45:00.000',56)--13,
+			    	('Elaine'    ,'11-954895385','BR-272, 1325 - Taboão, São Roque - SP, 18135-125, Brasil'                                            ,-23.542411573883093,  -47.125645279884345,'2021-04-02 22:58:00.000',100)--11,35
+			    	('Osmar'     ,'11-954895386','Rua Sabatini Alceste, 55, São Roque - SP, 18133-340, Brasil'                                         ,-23.514590173507546,  -47.13417571038008, '2021-04-02 22:59:00.000',54)--9
+			    	('Thiago'    ,'11-954895387','R. das Rosas, 110 - Jardim Sao Jose, São Roque - SP, 18133-280, Brasil'                              ,-23.515013817285826,  -47.13141404092311, '2021-04-02 23:10:00.000',92)--6,29*4
+			    	('Celma'     ,'11-954895389','R. São José, 205 - Jardim Sao Jose, São Roque - SP, 18133-255, Brasil'                               ,-23.51485518160395,   -47.13278565555811, '2021-04-02 23:20:00.000',52)--3,
+			    	('Helio'     ,'11-954895390','BR-272, 1325 - Taboão, São Roque - SP, 18135-125, Brasil'                                            ,-23.542411573883093,  -47.125645279884345,'2021-04-02 23:40:00.000',50)--15,
+			    	('Robson'    ,'11-954895391','R. Minas Gerais, 240 - Vila Irene, São Roque - SP, 18132-080, Brasil'                                ,-23.524010853023483,  -47.138444781303406,'2021-04-02 23:50:00.000',110)--11,31*4
 
---Abertura da pizzaria 2021-04-02 19:00:00.000 Sexta feira-- Sandro
+
+
 --Abertura da pizzaria 2021-04-03 19:00:00.000 Sabado feira-- Carol
 ('Márcia','11-984701710','R. Mariápolis, 40 - Bairro do Carmo (Canguera), São Roque - SP, 18132-380, Brasil'       ,-23.646257, -47.076865,'2021-04-03 18:30:00',118) -- 15, 7, 22
 ('Henrique','11-985682008','R. Ângelo Meneguesso, 352 - Centro, São Roque - SP, 18130-433, Brasil'       ,-23.5315458, -47.1406188,'2021-04-03 18:30:40',91) -- 16, 36
