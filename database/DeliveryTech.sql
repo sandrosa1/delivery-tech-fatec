@@ -231,8 +231,23 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 			    	('Marcio'    ,'11-954895381'  ,'R. Bento Antônio Pereira, 7 - Jardim Bela Vista, São Roque - SP, 18134-180, Brasil'                        ,-23.522989932825325,  -47.13158771395683 ,  '2021-04-08 21:50:00.000',91),--17.22
                     ('Patrícia'  ,'11-905747585'  ,'R. Ida, 118 - Vila Santo Antonio, São Roque - SP, 18133-290, Brasil'                                       , -23.515310182660063, -47.13280007243156 ,  '2021-04-08 23:00:00.000',85),--11,10
 			    	('Dolores'   ,'11-954895380'  ,'Rua Marechal Deodoro da Fonseca, 360 - Centro, São Roque - SP, 18130-070, Brasil'                          ,-23.534870359166487,  -47.13308103382588 ,  '2021-04-08 23:50:00.000',50),--15
-                    --Abertura da pizzaria 2021-04-09 19:00:00.000 Sexta feira--
-                    
+                    --Abertura da pizzaria 2021-04-09 19:00:00.000 Sexta feira--Sandro
+                    ('Januário','11-913957395','R. José Vitório Cavalheiros, 127 - Jardim Maria Trindade, São Roque - SP, 18133, Brasil'                       ,-23.51883054647095,   -47.12518058717251 ,  '2021-04-09 19:40:00.000',60),--15,22
+					('Amanda','11-995856484','R. Ida, 154 - Vila Santo Antonio, São Roque - SP, 18133-290, Brasil'                                             ,-23.5151380202832,    -47.132128179073334,  '2021-04-09 19:50:00.000',70),--7,22
+					('Romualdo','11-954758584','Av. Anhanguera, 166 - Jardim Bandeirantes, São Roque - SP, 18134-240, Brasil'                                  ,-23.52378951598343,   -47.1325982362032  ,  '2021-04-09 20:10:00.000',75),--9,32*3
+					('Vinicius','11-997654648','R. Paulino Hermílio de Campos, 116 - Centro, São Roque - SP, 18130-385, Brasil'                                ,-23.530205372438676,  -47.13948681950569 ,  '2021-04-09 20:20:00.000',53),--14
+					('Francisco','11-987654365','R. Joaquim Silveira Mello, 209 - Jardim Carambei, São Roque - SP, 18132-170, Brasil'                          ,-23.523613675736318,  -47.14176636189222 ,  '2021-04-09 20:40:00.000',62),--8
+					('Augusto','11-976476365','Rua Cardeal, 432, São Roque - SP, Brasil'                                                                       ,-23.509749838999195,  -47.14945625513792 ,  '2021-04-09 21:10:00.000',60),--6
+					('Antônia','11-967600224','Rua Araras, 118 - Jardim Carambei, São Roque - SP, 18132-270, Brasil'                                           ,-23.521246572621433,  -47.14085709303617 ,  '2021-04-09 21:20:00.000',80),--10,26
+					('Jussara','11-911133445','R. Cap. Fernão Paes de Barros, 218 - Jardim Bela Vista, São Roque - SP, 18134-150, Brasil'                      ,-23.52193303690705,   -47.129760794341564,  '2021-04-09 21:30:00.000',50),--15
+					('Amaral','11-968885533','R. Prof. Júlio César de Oliveira, 118 - Jardim Villaca, São Roque - SP, 18130-630, Brasil'                       ,-23.53231195288663,   -47.12795801460742 ,  '2021-04-09 21:50:00.000',79),--2,28*3
+					('Bruna','11-999774456','R. São Tibúrcio, 376 - Sao Roque, São Roque - SP, 18135-260, Brasil'                                              ,-23.55455609631582,   -47.12289299815893 ,  '2021-04-09 22:30:00.000',52),--3
+					('Cristiane' ,'11-954895360','Av. João Pessoa, 378 - Centro, São Roque - SP, 18130-290, Brasil'                                            ,-23.532246785574436,  -47.13871601969004 ,  '2021-04-09 22:35:00.000',142),--8,14,29*2,27
+					('Cecilia','11-977755332','R. Júlio Salvetti, 33 - Parque Primavera, São Roque - SP, 18135-580, Brasil'                                    ,-23.560312772853194,  -47.11548440158368 ,  '2021-04-09 22:40:00.000',53),--14
+					('Daniel','11-955543947','R. Dirceu P de Andrade, 183 - Jardim Vinhas do Sol (Mailasqui), São Roque - SP, 18143-665, Brasil'               ,-23.566244673353136,  -47.08882391452789 ,  '2021-04-09 22:45:00.000',60),--15,22
+			    	('José'      ,'11-954895361','R. Duque de Caxias, 240 - Centro, São Roque - SP, 18130-150, Brasil'                                         ,-23.53361221845325,   -47.13631343096495 ,  '2021-04-09 23:20:00.000',54),--9
+					('Daniel','11-955543947','R. Dirceu P de Andrade, 183 - Jardim Vinhas do Sol (Mailasqui), São Roque - SP, 18143-665, Brasil'               ,-23.566244673353136,  -47.08882391452789 ,  '2021-04-09 23:25:00.000',76),--16,22
+					('Emilson','11-946489887','R. José Rosa, 140 - Jardim Ponta-Pora (Mailasqui), São Roque - SP, 18143-757, Brasil'                           ,-23.559755587007174,  -47.09486357867718 ,  '2021-04-09 23:30:00.000',52),--3
                     --Abertura da pizzaria 2021-04-10 19:00:00.000 Sabado feira-- Carol
 			    	('Elaine'    ,'11-954895385','BR-272, 1325 - Taboão, São Roque - SP, 18135-125, Brasil'                                                    ,-23.542411573883093,  -47.125645279884345,  '2021-04-10 19:01:00.000',75),--13, 18,19
 			    	('Osmar'     ,'11-954895386','Rua Sabatini Alceste, 55, São Roque - SP, 18133-340, Brasil'                                                 ,-23.514590173507546,  -47.13417571038008,   '2021-04-10 19:10:00.000',66),--16
