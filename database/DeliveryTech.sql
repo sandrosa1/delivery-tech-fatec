@@ -224,13 +224,24 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 					('Otavio'      ,'11-976559877','R. Barra Bonita, 2-64 - Vila Nova Sao Roque, São Roque - SP, 18131-215, Brasil'      			 ,-23.527752, -47.153366,'2021-04-04 21:39:00',89), --12,29x2
 					('Olivia'      ,'11-990273826','R. Manoel Lessa, 456 - Jardim Marieta, São Roque - SP, 18131-418, Brasil'       				 ,-23.529003, -47.155923,'2021-04-04 22:01:00',77), --17,28
 					('Thiago'      ,'11-996921807','R. Manoel José Ferreira - Marmeleiro, São Roque - SP, 18120-000, Brasil'      				     ,-23.535409, -47.160054,'2021-04-04 22:18:00',78), --11,26
+					('Renata'      ,'11-996324678','R. Maestro Porfírio Taváres, 102-298 - Jardim Maria Trindade, São Roque - SP, Brasil'      		 ,-23.518529, -47.126278,'2021-04-04 22:36:00',80), --16,29x2,30x2
+					('André'       ,'11-994475231','R. Epaminondas de Oliveira, 12-132 - Centro, São Roque - SP, 18130-505, Brasil'      		     ,-23.526265, -47.134675,'2021-04-04 23:03:00',126), --18,41
 
 --Abertura da pizzaria 2021-04-06 19:00:00.000 Terça feira-- Carol
 						('Vicente'      ,'11-981539703','R. México, 121 - Vila Sao Rafael, São Roque - SP, 18131-453, Brasil'                       ,-23.5322361,-47.1522304,  '2021-04-06 19:20:00.000',60),--3,25
 						('Manuela'      ,'11-997414917','R. Padre Anchieta, 123 - Esplanada Mendes Moraes, São Roque - SP, 18130-720, Brasil'                       ,-23.5283878,-47.1304861,  '2021-04-06 19:20:00.000',56),--13
 						('Elisa'      ,'11-997414917','R. Profa. Maria Antônia Constancia, 105 - Esplanada Mendes Moraes, São Roque - SP, 18130-770, Brasil'                       ,-23.5298451,-47.1318728,  '2021-04-06 19:20:00.000',62),--8
 						('Ana'      ,'11-997414874','Av. Gérson Nastri, 78 - Vila Santa Rita, São Roque - SP, 18130-700, Brasil'                       ,-23.5305001,-47.1296621,  '2021-04-06 19:50:00.000',70),--810
+
 --Abertura da pizzaria 2021-04-07 19:00:00.000 Quarta feira-- Rafael
+                        ('Roberto'     ,'11-933215787','R. Rosa Passos, 95 - Vila Irene, São Roque - SP, 18132-050, Brasil'      		                 ,-23.523551, -47.137127,'2021-04-07 19:23:00',69), --9,35x2
+                        ('Juliana'     ,'11-995568741','R. Paraná, 107-63 - Vila Irene, São Roque - SP, 18132-110, Brasil'      		                 ,-23.524912, -47.137406,'2021-04-07 19:57:00',78), --2,36
+                        ('Aline'       ,'11-994475231','Av. São Roque, 80-158 - Estacao, São Roque - SP, 18130-545, Brasil'      		                 ,-23.535702, -47.139583,'2021-04-07 20:12:00',158), --9,17,30x2,33x2
+                        ('Pamela'      ,'11-994475231','R. Santa Pedrina, 49 - Jardim Villaca, São Roque - SP, 18135-410, Brasil'      		             ,-23.545277, -47.122203,'2021-04-07 20:34:00',90), --6,29x5
+                        ('Lucas'       ,'11-994475231','R. Bento Antônio Pereira, 160-246 - Jardim Bela Vista, São Roque - SP, 18134-180, Brasil'        ,-23.521224, -47.130670,'2021-04-07 20:45:00',60), --16,23
+                        ('Alan'        ,'11-994475231','R. Rotary Club, 78-230 - Jardim Florida, São Roque - SP, 18133-050, Brasil'      		         ,-23.520360, -47.134009,'2021-04-07 21:32:00',130), --12,39
+                        ('André'       ,'11-994475231','R. Epaminondas de Oliveira, 12-132 - Centro, São Roque - SP, 18130-505, Brasil'      		     ,-23.526265, -47.134675,'2021-04-07 23:03:00',126), --16,23
+
 --Abertura da pizzaria 2021-04-08 19:00:00.000 Quinta feira-- Sandro
 --Abertura da pizzaria 2021-04-09 19:00:00.000 Sexta feira--
 --Abertura da pizzaria 2021-04-10 19:00:00.000 Sabado feira-- Carol
@@ -253,7 +264,7 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 			    	('Juan'     ,'11-99684513 ','R. Santa Emília, 62 - Jardim Villaca, São Roque - SP, 18135-400, Brasil'          ,-23.5462076,-47.1227761, '2021-04-10 21:03:00.000',50)--15
 			    	('Filipe'     ,'11-999874516 ','R. Sergipe, 107 - Taboão, São Roque - SP, 18135-130, Brasil'          ,-23.5429047,-47.1259609, '2021-04-10 21:15:00.000',66)--15,33x2
 
---Abertura da pizzaria 2021-04-11 19:00:00.000 Domingo feira--
+--Abertura da pizzaria 2021-04-11 19:00:00.000 Domingo feira-- 
 --Abertura da pizzaria 2021-04-13 19:00:00.000 Terça feira-- Carol
 						('Mariana'     ,'11-972838287','R. Bento Antônio Pereira, 157-1 - Jardim Bela Vista, São Roque - SP, 18134-180, Brasil'      	 ,-23.522280, -47.131112,'2021-04-13 20:00:00',60), --7
 						('Beatriz'     ,'11-973728822','R. Francisco da Silva Pontes, 139 - Jardim Florida, São Roque - SP, 18133-040, Brasil'       	 ,-23.520116, -47.132904,'2021-04-13 20:15:00',50), --15
