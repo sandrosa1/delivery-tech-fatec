@@ -167,22 +167,42 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 			    	('Helio'     ,'11-954895390','BR-272, 1325 - Taboão, São Roque - SP, 18135-125, Brasil'                                            ,-23.542411573883093,  -47.125645279884345,'2021-04-02 23:40:00.000',50)--15,
 			    	('Robson'    ,'11-954895391','R. Minas Gerais, 240 - Vila Irene, São Roque - SP, 18132-080, Brasil'                                ,-23.524010853023483,  -47.138444781303406,'2021-04-02 23:50:00.000',110)--11,31*4
 
-
-
 --Abertura da pizzaria 2021-04-03 19:00:00.000 Sabado feira-- Carol
-('Márcia','11-984701710','R. Mariápolis, 40 - Bairro do Carmo (Canguera), São Roque - SP, 18132-380, Brasil'       ,-23.646257, -47.076865,'2021-04-03 18:30:00',118) -- 15, 7, 22
-('Henrique','11-985682008','R. Ângelo Meneguesso, 352 - Centro, São Roque - SP, 18130-433, Brasil'       ,-23.5315458, -47.1406188,'2021-04-03 18:30:40',91) -- 16, 36
-('Yasmin','11-989147417','Avenida Campo Limpo, 50 - Vila Nova São Roque, São Roque - SP, 18131-320, Brasil'       ,-23.5252214, -47.1524006,'2021-04-03 18:38:00',118) -- 12, 13, 27
-('Priscila','11-991238914','Rua Sotero de Souza, 800 - Centro, São Roque - SP, 18130-200, Brasil',-23.535687,-47.1376056,'2021-04-03 18:50:00',62) -- 14,23
-('Fábio','11-981921631','R. Francisco Tagliassachi, 82 - Jardim Rene, São Roque - SP, 18135-300, Brasil',-23.5389705, -47.1304322,'2021-04-03 19:40:00',196) -- 9,3,15,22,31x3
-('Joaquim','11-998581916','Av. Guilherme de Almeida, 271 - Jardim Santa Maria, São Roque - SP, 18135-660, Brasil',-23.5612862,-47.1270003,'2021-04-03 20:10:00',106) -- 17,35
-('Giovanna','11-998581916','R. dos Carvalhos, 54 - Jardim Guacu, São Roque - SP, 18132-440, Brasil',-23.514503,-47.1419799,'2021-04-03 20:15:00',110) -- 6,15
-('Antonella','11-994231219','R. Santa Virgínia, 240 - Jardim Villaca, São Roque - SP, 18135-340, Brasil',-23.5476301,-47.1214591,'2021-04-03 21:10:00',70) -- 7,26
-('Geraldo','11-998581916','R. Cláudio de Souza, 129 - Vila Santa Rita, São Roque - SP, 18130-690, Brasil',-23.5301967,-47.1269538,'2021-04-03 21:12:00',72) -- 4,23
-('Danilo','11-998581916','R. Alexandre Bonini, 83 - Jardim Rene, São Roque - SP, 18135-040, Brasil',-23.5392865,-47.1298161,'2021-04-03 21:30:00',106) -- 1, 14
-('Esther','11-998581916','Rua Monsenhor, 126 - Vila Santa Rosalia, São Roque - SP, 18136-220, Brasil',-23.5434782,-47.1340701,'2021-04-03 21:40:00',129) -- 5,15, 33x3
-
---Abertura da pizzaria 2021-04-01 19:00:00.000 Quinta feira--
+						('Márcia'    ,'11-984701710','R. Mariápolis, 40 - Bairro do Carmo (Canguera), São Roque - SP, 18132-380, Brasil'                   ,-23.646257, -47.076865,
+						'2021-04-03 18:30:00',118) -- 15, 7, 22
+						('Henrique','11-985682008','R. Ângelo Meneguesso, 352 - Centro, São Roque - SP, 18130-433, Brasil'                                 ,-23.5315458, -47.1406188,
+						'2021-04-03 18:30:40',91) -- 16, 36
+						('Yasmin','11-989147417','Avenida Campo Limpo, 50 - Vila Nova São Roque, São Roque - SP, 18131-320, Brasil'                        ,-23.5252214, -47.1524006,
+						'2021-04-03 18:38:00',118) -- 12, 13, 27
+						('Priscila','11-991238914','Rua Sotero de Souza, 800 - Centro, São Roque - SP, 18130-200, Brasil'                                  ,-23.535687,-47.1376056,
+						'2021-04-03 18:50:00',62) -- 14,23
+						('Fábio','11-981921631','R. Francisco Tagliassachi, 82 - Jardim Rene, São Roque - SP, 18135-300, Brasil'                           ,-23.5389705, -47.1304322,
+						'2021-04-03 19:40:00',196) -- 9,3,15,22,31x3
+						('Joaquim','11-998581916','Av. Guilherme de Almeida, 271 - Jardim Santa Maria, São Roque - SP, 18135-660, Brasil'                  ,-23.5612862,-47.1270003,
+						'2021-04-03 20:10:00',106) -- 17,35
+						('Giovanna','11-998581916','R. dos Carvalhos, 54 - Jardim Guacu, São Roque - SP, 18132-440, Brasil'                                ,-23.514503,-47.1419799,
+						'2021-04-03 20:15:00',110) -- 6,15
+						('Antonella','11-994231219','R. Santa Virgínia, 240 - Jardim Villaca, São Roque - SP, 18135-340, Brasil'                           ,-23.5476301,-47.1214591,
+						'2021-04-03 21:10:00',70) -- 7,26
+						('Geraldo','11-998581916','R. Cláudio de Souza, 129 - Vila Santa Rita, São Roque - SP, 18130-690, Brasil'                          ,-23.5301967,-47.1269538,
+						'2021-04-03 21:12:00',72) -- 4,23
+						('Danilo','11-998581916','R. Alexandre Bonini, 83 - Jardim Rene, São Roque - SP, 18135-040, Brasil'                                ,-23.5392865,-47.1298161,
+						'2021-04-03 21:30:00',106) -- 1, 14
+						('Esther','11-998581916','Rua Monsenhor, 126 - Vila Santa Rosalia, São Roque - SP, 18136-220, Brasil'                              ,-23.5434782,-47.1340701,
+						'2021-04-03 21:40:00',129) -- 5,15, 33x3
+						('Thereza'   ,'11-954895357','Rua Santa Cruz, 117 - Vila Santa Isabel, São Roque - SP, 18136-025, Brasil'                          ,-23.536778603376078, -47.13693100959063,
+						'2021-04-01 21:50:00.000',55),--5
+						('Paula','11-998581547','R. dos Carvalhos, 130 - Jardim Guacu, São Roque - SP, 18132-440, Brasil'                                  ,-23.5142204,-47.141774,
+						'2021-04-01 21:50:00.000',55),--5
+						('João','11-998581547','Rua Monsenhor, 77 - Vila Santa Rosalia, São Roque - SP, 18136-220, Brasil'                                 ,-23.5430125,-47.1353322,
+						'2021-04-03 21:56:00',60) -- 7
+						('Mateus','11-914682587','R. Marino Camurça, 78 - Centro, São Roque - SP, 18130-515, Brasil'                              	       ,-23.5260733,-47.1335327,
+						'2021-04-03 21:56:00',54) -- 9
+						('Cauê','11-994689587','R. Santo Antônio, 39 - Jardim Villaca, São Roque - SP, 18136-280, Brasil'                                  ,-23.547901,-47.1236839,
+						'2021-04-03 22:00:00',54) -- 9
+						('Elaine','11-994542875','R. Lívio Tagliassachi, 260 - Jardim Boa Vista, São Roque - SP, 18132-370, Brasil'                        ,-23.5173022,-47.142984,
+						'2021-04-03 22:00:00',62) -- 14, 23
+						('Joâo'      ,'11-954895354','R. Paulino Hermílio de Campos, 58 - Centro, São Roque - SP, 18130-385, Brasil'                       ,-23.53009716835891,  -47.13880117982625,  '2021-04-01 19:20:00.000',60),--3,25
 
 --Abertura da pizzaria 2021-04-04 19:00:00.000 Domingo feira-- Rafael
 --azs
