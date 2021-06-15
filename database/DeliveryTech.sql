@@ -137,6 +137,20 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 
 --Abertura da pizzaria 2021-04-02 19:00:00.000 Sexta feira-- Sandro
 --Abertura da pizzaria 2021-04-03 19:00:00.000 Sabado feira-- Carol
+('Márcia','11-984701710','R. Mariápolis, 40 - Bairro do Carmo (Canguera), São Roque - SP, 18132-380, Brasil'       ,-23.646257, -47.076865,'2021-04-03 18:30:00',118) -- 15, 7, 22
+('Henrique','11-985682008','R. Ângelo Meneguesso, 352 - Centro, São Roque - SP, 18130-433, Brasil'       ,-23.5315458, -47.1406188,'2021-04-03 18:30:40',91) -- 16, 36
+('Yasmin','11-989147417','Avenida Campo Limpo, 50 - Vila Nova São Roque, São Roque - SP, 18131-320, Brasil'       ,-23.5252214, -47.1524006,'2021-04-03 18:38:00',118) -- 12, 13, 27
+('Priscila','11-991238914','Rua Sotero de Souza, 800 - Centro, São Roque - SP, 18130-200, Brasil',-23.535687,-47.1376056,'2021-04-03 18:50:00',62) -- 14,23
+('Fábio','11-981921631','R. Francisco Tagliassachi, 82 - Jardim Rene, São Roque - SP, 18135-300, Brasil',-23.5389705, -47.1304322,'2021-04-03 19:40:00',196) -- 9,3,15,22,31x3
+('Joaquim','11-998581916','Av. Guilherme de Almeida, 271 - Jardim Santa Maria, São Roque - SP, 18135-660, Brasil',-23.5612862,-47.1270003,'2021-04-03 20:10:00',106) -- 17,35
+('Giovanna','11-998581916','R. dos Carvalhos, 54 - Jardim Guacu, São Roque - SP, 18132-440, Brasil',-23.514503,-47.1419799,'2021-04-03 20:15:00',110) -- 6,15
+('Antonella','11-994231219','R. Santa Virgínia, 240 - Jardim Villaca, São Roque - SP, 18135-340, Brasil',-23.5476301,-47.1214591,'2021-04-03 21:10:00',70) -- 7,26
+('Geraldo','11-998581916','R. Cláudio de Souza, 129 - Vila Santa Rita, São Roque - SP, 18130-690, Brasil',-23.5301967,-47.1269538,'2021-04-03 21:12:00',72) -- 4,23
+('Danilo','11-998581916','R. Alexandre Bonini, 83 - Jardim Rene, São Roque - SP, 18135-040, Brasil',-23.5392865,-47.1298161,'2021-04-03 21:30:00',106) -- 1, 14
+('Esther','11-998581916','Rua Monsenhor, 126 - Vila Santa Rosalia, São Roque - SP, 18136-220, Brasil',-23.5434782,-47.1340701,'2021-04-03 21:40:00',129) -- 5,15, 33x3
+
+--Abertura da pizzaria 2021-04-01 19:00:00.000 Quinta feira--
+
 --Abertura da pizzaria 2021-04-04 19:00:00.000 Domingo feira-- Rafael
 --azs
 
