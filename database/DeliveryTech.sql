@@ -352,6 +352,16 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 			    	('Renata'      ,'11-996324678','R. Maestro Porfírio Taváres, 102-298 - Jardim Maria Trindade, São Roque - SP, Brasil'      		     ,-23.518529,           -47.126278,         '2021-04-20 20:36:00.000',80 ), --15,28x2,29x2
 			    	('André'       ,'11-994475231','R. Epaminondas de Oliveira, 12-132 - Centro, São Roque - SP, 18130-505, Brasil'      		         ,-23.526265,           -47.134675,         '2021-04-20 21:03:00.000',126), --17,40
 			    	--Abertura da pizzaria 2021-04-21 19:00:00.000 Quarta feira--
+					('Murilo'      ,'11-956484181','R. Santa Virgínia, 315 - Jardim Villaca, São Roque - SP, 18135-340, Brasil'       					  ,-23.547706,          -47.120138,         '2021-04-21 19:07:00.000',84 ),--13,28*4
+					('Renata'      ,'11-998015105','R. Santa Pedrina, 81 - Jardim Villaca, São Roque - SP, 18135-410, Brasil'       					  ,-23.545578,          -47.122103,         '2021-04-21 19:30:00.000',53 ),--14
+					('Henrique'    ,'11-991565408','R. Francisco Tagliassachi, 2-142 - Jardim Rene, São Roque - SP, 18135-030, Brasil'                    ,-23.538927,          -47.129393,         '2021-04-21 20:15:00.000',55 ),--5,
+					('Ana'         ,'11-995980441','R. Padre Marçal, 452-524 - Centro, São Roque - SP, 18130-100, Brasil'       						  ,-23.535004,          -47.133883,         '2021-04-21 20:46:00.000',110), -- 6,15
+					('Lucas'       ,'11-995640944','Rua Antônio Cavaglieri, 60 - Centro, São Roque - SP, 18130-065, Brasil'       						  ,-23.533455,          -47.139830,         '2021-04-21 20:57:00.000',81 ),--10.27
+					('Gustavo'     ,'11-990108421','R. Prof. Júlio César de Oliveira, 99-1 - Vila Aguiar, São Roque - SP, 18130-630, Brasil'       	      ,-23.531569,          -47.127880,         '2021-04-21 21:21:00.000',70 ),--6,26
+					('Pedro'       ,'11-999948451','R. Comendador Inocêncio, 89 - Centro, São Roque - SP, 18130-480, Brasil'       				          ,-23.528421,          -47.134957,         '2021-04-21 21:43:00.000',62 ),--12,27
+					('Julia'       ,'11-990216548','R. Rotary Club, 78-230 - Jardim Florida, São Roque - SP, 18133-050, Brasil'       					  ,-23.520307,          -47.133916,         '2021-04-21 22:38:00.000',58 ), --15,25
+					('Neuza'       ,'11-996510841','Rua Sabatini Alceste, 148-678, São Roque - SP, 18133-340, Brasil'       							  ,-23.513787,          -47.132785,         '2021-04-21 22:56:00.000',66 ), --5,18,19
+
 			    	('Adriana','11-956712343','Rua Sabatini Alceste, 58, São Roque - SP, 18133-340, Brasil'                                              ,-23.514590173507546,  -47.13417571038008 ,'2021-04-22 19:10:00.000',65 ),--5,22
 			    	('Cintia','11-954738465','Rua Msr A Morais 55 - Vila Mike, São Roque - SP, 18136-220, Brasil'                                        ,-23.5432211821392,    -47.13324632495642 ,'2021-04-22 19:50:00.000',66 ),--5,27
 			    	('Luana','11-923436543','R. Santa Augusta, 43 - Jardim Villaca, São Roque - SP, 18135-360, Brasil'                                   ,-23.547008816208614,  -47.11882844567299 ,'2021-04-22 20:20:00.000',60 ),--15,22
@@ -399,12 +409,40 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 			    	('Nicolle'     ,'11-972828484','Av. Gérson Nastri, 163-197 - Vila Santa Rita, São Roque - SP, 18130-700, Brasil'      			     ,-23.530424,          -47.128567,          '2021-04-24 20:19:00.000',61 ), --12,22
 			    	('Otavio'      ,'11-976559877','R. Barra Bonita, 2-64 - Vila Nova Sao Roque, São Roque - SP, 18131-215, Brasil'      			     ,-23.527752,          -47.153366,          '2021-04-24 20:39:00.000',67 ), --14,28x2
 			    	--Abertura da pizzaria 2021-04-25 19:00:00.000 Domingo feira--
+  					('Roberta'     ,'11-981539703','Rua Sabatini Alceste, 133-9, São Roque - SP, 18133-340, Brasil'                                      ,-23.515077,           -47.134355,         '2021-04-25 19:20:00.000',55 ),--15,18
+  					('Augusto'     ,'11-981539703','R. Santa Quitéria, 563-441 - Vila Irene, São Roque - SP, 18132-050, Brasil'                          ,-23.532236,           -47.152230,         '2021-04-25 19:35:00.000',151),--11,12,36
+  					('Pedro'     ,'11-981539703','R. Leão XIII, 155-35 - Jardim Tanzi, São Roque - SP, Brasil'                                           ,-23.525177,           -47.134857,         '2021-04-25 20:01:00.000',50 ),--15,
+  					('Thiago'     ,'11-981539703','R. Cláudio de Souza, 100-166 - Vila Santa Rita, São Roque - SP, 18130-690, Brasil'                    ,-23.530144,           -47.126313,         '2021-04-25 20:10:00.000',103),--1,31*4
+  					('Vitor'     ,'11-981539703','Rua Quirino Aguiar, 82-188 - Vila Aguiar, São Roque - SP, Brasil'                                      ,-23.532598,           -47.128380,         '2021-04-25 20:35:00.000',66 ),--15,33x2
+  					('Joana'     ,'11-981539703','R. São Joaquim, 63 - Centro, São Roque - SP, 18130-220, Brasil'                                        ,-23.533837,           -47.140717,         '2021-04-25 20:37:00.000',61 ), --12,22
+  					('Natalia'     ,'11-981539703','R. Santana, 151 - Vila Marques, São Roque - SP, 18130-555, Brasil'                                   ,-23.536701,           -47.138714,         '2021-04-25 21:05:00.000',125), --5,7,22
+  					('Vitoria'     ,'11-981539703','R. Padre Marçal, 452-524 - Centro, São Roque - SP, 18130-100, Brasil'                                ,-23.534879,           -47.133910,         '2021-04-25 21:36:00.000',53 ),--1,
+  					('Julia'     ,'11-981539703','Av. São Luíz, 1023 - Jardim Villaca, São Roque - SP, 18135-150, Brasil'                                ,-23.552405,           -47.121602,         '2021-04-25 21:53:00.000',92 ),--6,29*4
+  					('Amanda'     ,'11-981539703','Av. São Roque, 215-159 - Estacao, São Roque - SP, Brasil'                                             ,-23.536309,           -47.139911,         '2021-04-25 22:07:00.000',75 ),--9,32*3
+  					('Leticia'     ,'11-981539703','Tv. Guanabara, 53 - Vila Irene, São Roque - SP, 18132-060, Brasil'                                   ,-23.523682,           -47.139178,         '2021-04-25 22:23:00.000',52 ),--3
+  					('Renata'     ,'11-981539703','R. Rotary Club, 78-230 - Jardim Florida, São Roque - SP, 18133-050, Brasil'                           ,-23.520185,           -47.133804,         '2021-04-25 22:34:00.000',54 ),--9
+  					('Adriana'     ,'11-981539703','Rua Sabatini Alceste, 148-678, São Roque - SP, 18133-340, Brasil'                                    ,-23.513803,           -47.132790,         '2021-04-25 22:39:00.000',55 ),--15,18
+  					('Claudinei'     ,'11-981539703','R. José Gômide de Castro, 212 - Jardim Maria Trindade, São Roque - SP, 18133-400, Brasil'          ,-23.517929,           -47.125772,         '2021-04-25 22:48:00.000',66 ), --5,18,19
+  					('Paulo'     ,'11-981539703','R. Pedro Abibe, 23 - Jardim Brasil, São Roque - SP, 18133-110, Brasil'                                 ,-23.516082,           -47.130281,         '2021-04-25 23:03:00.000',66 ), --16
+  					('Vinicius'     ,'11-981539703','R. Ida, 166 - Vila Santo Antonio, São Roque - SP, 18133-290, Brasil'                                ,-23.515194,           -47.132554,         '2021-04-25 23:15:00.000',120),--15,10
+  					('Antonio'     ,'11-981539703','R. Condor, 96 - Jardim Carambei, São Roque - SP, 18132-240, Brasil'                                  ,-23.521754,           -47.141358,         '2021-04-25 23:18:00.000',268), --1,7x2,8,22,24,28x2
+  					('Vicente'     ,'11-981539703','R. México, 121 - Vila Sao Rafael, São Roque - SP, 18131-453, Brasil'                                 ,-23.532236,           -47.152230,         '2021-04-25 23:36:00.000',60 ),--3,25
+
 			    	('Gerson'    ,'11-954895358','R. Barão do Rio Branco, 445 - Vila Junqueira, São Roque - SP, 18130-020, Brasil'                       ,-23.538849115392434, -47.13492874056101,  '2021-04-27 19:10:00.000',70 ),--10
 			    	('Mariano'   ,'11-954895359','R. Tomás Antônio Gonzaga, 247 - Paisagem Colonial, São Roque - SP, 18136-700, Brasil'                  ,-23.556905081914525, -47.14863214641809,  '2021-04-27 19:10:00.000',142),--8,14,29*2,27
 			    	('Cristiane' ,'11-954895360','Av. João Pessoa, 378 - Centro, São Roque - SP, 18130-290, Brasil'                                      ,-23.532246785574436, -47.13871601969004,  '2021-04-27 19:15:00.000',76 ),--16,18
 			    	('José'      ,'11-954895361','R. Duque de Caxias, 240 - Centro, São Roque - SP, 18130-150, Brasil'                                   ,-23.53361221845325,  -47.13631343096495,  '2021-04-27 20:20:00.000',54 ),--9
 			    	('Lucas'     ,'11-954895362','R. Bento Antônio Pereira, 108 - Jardim Bela Vista, São Roque - SP, 18134-180, Brasil'                  ,-23.522456259856284, -47.13113375008106,  '2021-04-27 21:03:00.000',60 ),--6
 			    	--Abertura da pizzaria 2021-04-28 19:00:00.000 Quarta feira--
+                    ('Henrique'  ,'11-991565408','R. Francisco Tagliassachi, 2-142 - Jardim Rene, São Roque - SP, 18135-030, Brasil'                     ,-23.538927,          -47.129393,         '2021-04-28 19:15:00.000',55 ),--5
+                    ('João'      ,'11-991565408','Rua Cardeal, 57-19, São Roque - SP, Brasil'                                                            ,-23.507192,          -47.147232,         '2021-04-28 19:30:00.000',66 ),--16
+                    ('Marcia'    ,'11-991565408','R. Vale Do Bom Jesus, 261, São Roque - SP, 18132-445, Brasil'                                          ,-23.505245,          -47.137536,         '2021-04-28 20:05:00.000',79 ),--2,28*3
+                    ('Roberval'  ,'11-991565408','R. João Pinto Splendore, 226, São Roque - SP, 18133-300, Brasil'                                       ,-23.513029,          -47.129512,         '2021-04-28 20:35:00.000',110),--11,31*4
+                    ('Juliana'   ,'11-991565408','R. Alfredo Haak, 26-100, São Roque - SP, Brasil'                                                       ,-23.513692,          -47.128504,         '2021-04-28 21:42:00.000',60 ),--3,25
+                    ('Flavia'    ,'11-991565408','R. José Dias Thomaz, 95-27 - Vila Santa Rita, São Roque - SP, Brasil'                                  ,-23.530288,          -47.127442,         '2021-04-28 21:59:00.000',54 ),--9
+                    ('Aline'     ,'11-991565408','Av. Gérson Nastri, 163-197 - Vila Santa Rita, São Roque - SP, 18130-700, Brasil'                       ,-23.530697,          -47.129190,         '2021-04-28 22:23:00.000',138),--1,7,35
+                    ('Marcelo'   ,'11-991565408','R. Manoel Vilaça, 86-152 - Vila Santa Isabel, São Roque - SP, 18136-020, Brasil'                       ,-23.539408,          -47.139357,         '2021-04-28 22:50:00.000',53 ),--1,
+
 					('Odair'     ,'11-954895361','R. Santa Leocádia, 95 - Jardim Villaca, São Roque - SP, 18135-310, Brasil'                             ,-23.545953342682566, -47.12087094783783,  '2021-04-29 19:30:00.000',74 ),--4,27
 			    	('Luiz'      ,'11-954895362','R. das Papoulas, 568 - Vila Santa Rosalia, São Roque - SP, 18136-185, Brasil'                          ,-23.54702510621119,  -47.13165711611509,  '2021-04-29 19:30:00.000',85 ),--5,30*3
 			    	('Joel'      ,'11-954895365','Rua Msr A Morais 52 - Vila Mike, São Roque - SP, 18136-220, Brasil'                                    ,-23.5432211821392,   -47.13324632495642,  '2021-04-29 19:42:00.000',82 ),--8,31,22
