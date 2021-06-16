@@ -72,23 +72,23 @@ Alter Table PedidoProduto
 Go
 
 Insert Into Produtos (Tipo, Categoria, Nome, Descricao, ValorProduto)
-			 Values ('Massas','Pizza','Alcachofra','Cora��o da alcachofra temperado. Podendo ser coberta com mussarela especial ou parmes�o.', 53.00),
+			 Values ('Massas','Pizza','Alcachofra','Coração da alcachofra temperado. Podendo ser coberta com mussarela especial ou parmesão.', 53.00),
 					('Massas','Pizza','Catupiry','Coberta com o mais puro catupiry.',58.00),
 					('Massas','Pizza','Milho Verde','Milho verde. Podendo ser coberta com mussarela especial ou catupiry.',52.00),
-					('Massas','Pizza','Piment�o','Piment�o fatiado, champignom picado, palmito cortado. Podendo ser coberta com mussarela especial ou catupiry.',63),
-					('Massas','Pizza','Calabreza com Piment�o','Calabreza fatiada, piment�o fatiado e cebola. Coberto com queijo parmes�o ralado.',55.00),
-					('Massas','Pizza','Aliche','Fatias de aliche importado, coberto com queijo parmes�o ralado.',60.00),
+					('Massas','Pizza','Pimentão','Pimentão fatiado, champignom picado, palmito cortado. Podendo ser coberta com mussarela especial ou catupiry.',63),
+					('Massas','Pizza','Calabreza com Pimentão','Calabreza fatiada, pimentção fatiado e cebola. Coberto com queijo parmesão ralado.',55.00),
+					('Massas','Pizza','Aliche','Fatias de aliche importado, coberto com queijo parmesão ralado.',60.00),
 					('Massas','Pizza','Portuguesa','Presunto picado, ovos picado, cebola e coberta com mussarela',60.00),
 					('Massas','Pizza','Atum','Atum s�lido coberto com cebolas.',62.00),
 					('Massas','Pizza','Baiana','Calabreza mo�da com acentuado sabor de pimenta.',54.00),
-					('Massas','Pizza','Br�colis','Broc�lis com bacon frito, coberto com parmes�o.',70.00),
-					('Massas','Pizza','Bacalhau','Bacalhau desfiado e refogado no azeite com salsinha,coberto com rodelas de piment�o e queijo parmes�o ralado.',75.00),
+					('Massas','Pizza','Brócolis','Brócolis com bacon frito, coberto com parmesão.',70.00),
+					('Massas','Pizza','Bacalhau','Bacalhau desfiado e refogado no azeite com salsinha,coberto com rodelas de pimentção e queijo parmesão ralado.',75.00),
 					('Massas','Pizza','Escarola','Escarola refogada no azeite temperada com aliche ou bacon',51.00),
 					('Massas','Pizza','Frango com Catupiry','Peito de frango temperado, milho verde e palmito cortado. Podendo ser coberta com mussarela especial ou catupiry.',56.00),
-					('Massas','Pizza','Margherita','Mussaela especial, rodelas de tomate e manjeric�o fresco, salpicado com queijo parmes�o.',53.00),
+					('Massas','Pizza','Margherita','Mussaela especial, rodelas de tomate e manjericão fresco, salpicado com queijo parmesão.',53.00),
 					('Massas','Pizza','Mussarela','Coberta com mussarela especial.',50.00),
-					('Massas','Pizza','5 Queijos','Queijo gorgonzola, catupiry, mussarela, provolone e parmes�o ralado',66.00),
-					('Massas','Pizza','Camar�o','Camar�o temperado e refogado no azeite. Podendo ser coberta com mussarela especial ou catupiry.',81.00),
+					('Massas','Pizza','5 Queijos','Queijo gorgonzola, catupiry, mussarela, provolone e parmesão ralado',66.00),
+					('Massas','Pizza','Camarão','Camarão temperado e refogado no azeite. Podendo ser coberta com mussarela especial ou catupiry.',81.00),
 					('Bebidads','Refrigerante','Coca cola','Lata 350ml',5.00),
 					('Bebidads','Refrigerante','Guaran�','Lata 350ml',6.00),
 					('Bebidads','Refrigerante','Sprit','Lata 350ml',4.00),
@@ -419,23 +419,23 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 			    	('Celma'     ,'11-954895376','R. São José, 205 - Jardim Sao Jose, São Roque - SP, 18133-255, Brasil'                                 ,-23.51485518160395,  -47.13278565555811,  '2021-04-29 23:20:00.000',52 ),--3,
 			    	('Helio'     ,'11-954895377','BR-272, 1325 - Taboão, São Roque - SP, 18135-125, Brasil'                                              ,-23.542411573883093, -47.125645279884345, '2021-04-29 23:40:00.000',50 ),--15,
 			    	('Robson'    ,'11-954895378','R. Minas Gerais, 240 - Vila Irene, São Roque - SP, 18132-080, Brasil'                                  ,-23.524010853023483, -47.138444781303406, '2021-04-29 23:50:00.000',110),--11,31*4
-					('Regina'      ,'11-975635521','R. Maria Guilhermina Lemos, 175-1 - Vila Junqueira, São Roque - SP, 18136-180, Brasil'  		     ,-23.541219,          -47.132667,          '2021-04-30 19:15:00.000',125), --5,7,22
-					('Guilherme'   ,'11-987337822','R. Ten. Francisco Luís de Campos, 170-284 - Vila Junqueira, São Roque - SP, 18136-120, Brasil'       ,-23.538750,          -47.134115,          '2021-04-30 19:27:00.000',70 ), --8,25
-					('Samuel'      ,'11-999737290','R. Primeiro de Maio, 40 - Estacao, São Roque - SP, 18131-025, Brasil'       					     ,-23.534235,          -47.141057,          '2021-04-30 19:59:00.000',123), --13,15,22,28
-					('Lara'        ,'11-975377282','R. Goiás, 151-1 - Vila Irene, São Roque - SP, 18132-070, Brasil'      							     ,-23.523077,          -47.138289,          '2021-04-30 20:05:00.000',192), --3,6,7,22x2
-					('Murilo'      ,'11-982672827','R. Leão XIII, 155-35 - Jardim Tanzi, São Roque - SP'       										     ,-23.524887,          -47.134738,          '2021-04-30 20:07:00.000',138), --1,7,35
-					('Mariana'     ,'11-972838287','R. Bento Antônio Pereira, 157-1 - Jardim Bela Vista, São Roque - SP, 18134-180, Brasil'      	     ,-23.522280,          -47.131112,          '2021-04-30 20:25:00.000',121), --2,14
-					('Beatriz'     ,'11-973728822','R. Francisco da Silva Pontes, 139 - Jardim Florida, São Roque - SP, 18133-040, Brasil'       	     ,-23.520116,          -47.132904,          '2021-04-30 20:29:00.000',167), --16,17,22,26
-					('Isaque'      ,'11-963737826','R. Chad Kaid, 176 - Jardim Sao Jose, São Roque - SP, 18133-250, Brasil'      					     ,-23.515384,          -47.130244,          '2021-04-30 20:36:00.000',134), --5,10,23
-					('Anthony'     ,'11-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'       			     ,-23.525430,          -47.151320,          '2021-04-30 20:42:00.000',60 ), --6
-					('Elisa'       ,'11-972384848','R. João Pinto Splendore, 150, São Roque - SP, 18133-300, Brasil'       							     ,-23.513574,          -47.129846,          '2021-04-30 20:48:00.000',52 ), --3
-					('Nicolle'     ,'11-972828484','Av. Gérson Nastri, 163-197 - Vila Santa Rita, São Roque - SP, 18130-700, Brasil'      			     ,-23.530424,          -47.128567,          '2021-04-30 20:49:00.000',61 ), --12,22
-                    ('Elaine'      ,'11-994542875','R. Lívio Tagliassachi, 260 - Jardim Boa Vista, São Roque - SP, 18132-370, Brasil'                    ,-23.5173022,         -47.142984,          '2021-04-30 22:00:00.000',62 ), -- 14, 23
-                    ('João'        ,'11-954895354','R. Paulino Hermílio de Campos, 58 - Centro, São Roque - SP, 18130-385, Brasil'                       ,-23.53009716835891,  -47.13880117982625,  '2021-04-30 22:20:00.000',60 ),--3,25
-					('Regina'      ,'11-975635521','R. Maria Guilhermina Lemos, 175-1 - Vila Junqueira, São Roque - SP, 18136-180, Brasil'  		     ,-23.541219,          -47.132667,          '2021-04-30 23:15:00.000',125), --5,7,22
-					('Guilherme'   ,'11-987337822','R. Ten. Francisco Luís de Campos, 170-284 - Vila Junqueira, São Roque - SP, 18136-120, Brasil'       ,-23.538750,          -47.134115,          '2021-04-30 23:27:00.000',70 ), --8,25
-					('Samuel'      ,'11-999737290','R. Primeiro de Maio, 40 - Estacao, São Roque - SP, 18131-025, Brasil'       					     ,-23.534235,          -47.141057,          '2021-04-30 23:53:00.000',123), --13,15,22,28
-					('Lara'        ,'11-975377282','R. Goiás, 151-1 - Vila Irene, São Roque - SP, 18132-070, Brasil'      							     ,-23.523077,          -47.138289,          '2021-04-30 23:59:00.000',192), --3,6,7,22x2
+					('Regina'    ,'11-975635521','R. Maria Guilhermina Lemos, 175-1 - Vila Junqueira, São Roque - SP, 18136-180, Brasil'  		         ,-23.541219,          -47.132667,          '2021-04-30 19:15:00.000',125), --5,7,22
+					('Guilherme' ,'11-987337822','R. Ten. Francisco Luís de Campos, 170-284 - Vila Junqueira, São Roque - SP, 18136-120, Brasil'         ,-23.538750,          -47.134115,          '2021-04-30 19:27:00.000',70 ), --8,25
+					('Samuel'    ,'11-999737290','R. Primeiro de Maio, 40 - Estacao, São Roque - SP, 18131-025, Brasil'       					         ,-23.534235,          -47.141057,          '2021-04-30 19:59:00.000',123), --13,15,22,28
+					('Lara'      ,'11-975377282','R. Goiás, 151-1 - Vila Irene, São Roque - SP, 18132-070, Brasil'      							     ,-23.523077,          -47.138289,          '2021-04-30 20:05:00.000',192), --3,6,7,22x2
+					('Murilo'    ,'11-982672827','R. Leão XIII, 155-35 - Jardim Tanzi, São Roque - SP'       										     ,-23.524887,          -47.134738,          '2021-04-30 20:07:00.000',138), --1,7,35
+					('Mariana'   ,'11-972838287','R. Bento Antônio Pereira, 157-1 - Jardim Bela Vista, São Roque - SP, 18134-180, Brasil'      	         ,-23.522280,          -47.131112,          '2021-04-30 20:25:00.000',121), --2,14
+					('Beatriz'   ,'11-973728822','R. Francisco da Silva Pontes, 139 - Jardim Florida, São Roque - SP, 18133-040, Brasil'       	         ,-23.520116,          -47.132904,          '2021-04-30 20:29:00.000',167), --16,17,22,26
+					('Isaque'    ,'11-963737826','R. Chad Kaid, 176 - Jardim Sao Jose, São Roque - SP, 18133-250, Brasil'      					         ,-23.515384,          -47.130244,          '2021-04-30 20:36:00.000',134), --5,10,23
+					('Anthony'   ,'11-997362682','Av. Campo Limpo, 89-1 - Vila Nova Sao Roque, São Roque - SP, 18131-320, Brasil'       			     ,-23.525430,          -47.151320,          '2021-04-30 20:42:00.000',60 ), --6
+					('Elisa'     ,'11-972384848','R. João Pinto Splendore, 150, São Roque - SP, 18133-300, Brasil'       							     ,-23.513574,          -47.129846,          '2021-04-30 20:48:00.000',52 ), --3
+					('Nicolle'   ,'11-972828484','Av. Gérson Nastri, 163-197 - Vila Santa Rita, São Roque - SP, 18130-700, Brasil'      			     ,-23.530424,          -47.128567,          '2021-04-30 20:49:00.000',61 ), --12,22
+                    ('Elaine'    ,'11-994542875','R. Lívio Tagliassachi, 260 - Jardim Boa Vista, São Roque - SP, 18132-370, Brasil'                      ,-23.5173022,         -47.142984,          '2021-04-30 22:00:00.000',62 ), -- 14, 23
+                    ('João'      ,'11-954895354','R. Paulino Hermílio de Campos, 58 - Centro, São Roque - SP, 18130-385, Brasil'                         ,-23.53009716835891,  -47.13880117982625,  '2021-04-30 22:20:00.000',60 ),--3,25
+					('Regina'    ,'11-975635521','R. Maria Guilhermina Lemos, 175-1 - Vila Junqueira, São Roque - SP, 18136-180, Brasil'  		         ,-23.541219,          -47.132667,          '2021-04-30 23:15:00.000',125), --5,7,22
+					('Guilherme' ,'11-987337822','R. Ten. Francisco Luís de Campos, 170-284 - Vila Junqueira, São Roque - SP, 18136-120, Brasil'         ,-23.538750,          -47.134115,          '2021-04-30 23:27:00.000',70 ), --8,25
+					('Samuel'    ,'11-999737290','R. Primeiro de Maio, 40 - Estacao, São Roque - SP, 18131-025, Brasil'       					         ,-23.534235,          -47.141057,          '2021-04-30 23:53:00.000',123), --13,15,22,28
+					('Lara'      ,'11-975377282','R. Goiás, 151-1 - Vila Irene, São Roque - SP, 18132-070, Brasil'      							     ,-23.523077,          -47.138289,          '2021-04-30 23:59:00.000',192), --3,6,7,22x2
 
 Go
 
