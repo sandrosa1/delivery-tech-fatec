@@ -21,8 +21,6 @@ Create Table  Pedidos (CodPedido Int Primary Key Identity(1,1),
 						TotalDoPedido Decimal(18,2) Not Null) 
 Go
 
-Drop table Pedidos
-Go
 --Criando a tabela de produtos
 --Obs: Na table original existe o campo imagem que informa o local onde a imagem do produto est� armazenada--
 Create Table Produtos (CodProduto Int Primary Key Identity(1,1),
@@ -33,8 +31,6 @@ Create Table Produtos (CodProduto Int Primary Key Identity(1,1),
 						ValorProduto Decimal(18,2) Not Null)
 Go
 
-Drop table Produtos
-Go
 
 --Tabela de relacionamento--
 --Aqui deixamos a tabela mais elaborada que a original--
@@ -45,8 +41,6 @@ Create Table PedidoProduto (CodPedido Int Not Null,
 							ValorTotal Decimal(18,2) Not Null)
 Go
 
-Drop table PedidoProduto
-Go
 
 --Criando o relacionamento entra a tabela PedidoProduto e pedidos--
 Alter Table PedidoProduto
@@ -61,7 +55,6 @@ Alter Table PedidoProduto
    Foreign Key (CodProduto)
     References Produtos (CodProduto)
 Go
-
 
 
 Insert Into Produtos (Tipo, Categoria, Nome, Descricao, ValorProduto)
@@ -105,13 +98,6 @@ Insert Into Produtos (Tipo, Categoria, Nome, Descricao, ValorProduto)
 					('Bebidas','Vinho','Don Patto','Tinto seco merlot 750ml',55.00),
 					('Bebidas','Vinho','Don Patto','Patto branco de mesa de mesa 720ml',45.00),
 					('Bebidas','Vinho','Don Patto','Patto Tinto de mesa 720ml',45.00)														
-Go
-
-
-Drop Table Pedidos
-Go
-
-Select * from Produtos
 Go
 
 
@@ -463,10 +449,6 @@ Insert Into Pedidos (Nome, Telefone, Endereco , Latitude, Longitude, Momento, To
 					('Lara'      ,'11-975377282'  ,'R. Goiás, 151-1 - Vila Irene, São Roque - SP, 18132-070, Brasil'      							       ,-23.523077,           -47.138289,         '2021-04-30 23:59:00.000',192) --3,6,7,22x2
 
 Go
-
-Select * from Pedidos
-Go
-
 
 
 Insert Into PedidoProduto (CodPedido, CodProduto, Quantidade, ValorUnitario, ValorTotal)
