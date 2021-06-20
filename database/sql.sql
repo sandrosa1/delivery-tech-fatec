@@ -11,7 +11,7 @@ Go
 
 --Criando Tabela para armazenar endereços--
 --Obs: Na table original existe o campo status que verifica se o pedido foi entregue--
-Create Table Endereco (CodigoEndereco Int Primary Key Identity(1,1),
+Create Table tb_Endereco (CodigoEndereco Int Primary Key Identity(1,1),
                                 TipoLogradouro Varchar(5) Not Null,
                                 Logradouro Varchar(100) Not Null,
                                 Numero Int Not Null,
@@ -23,69 +23,72 @@ Create Table Endereco (CodigoEndereco Int Primary Key Identity(1,1),
                                 Latitude Float Not Null,
                                 Longitude Float Not Null)
 Go
-drop Table Endereco
+
+drop table Endereco
 Go
 
---Criando a tabela de pedidos--
+--Criando a tabela de Cliente--
 --Obs: Na table original existe o campo status que verifica se o pedido foi entregue--
-Create Table Cliente (CodigoCliente Int Primary Key Identity(1,1), 
+Create Table tb_Cliente (CodigoCliente Int Primary Key Identity(1,1), 
 						NomeCliente Varchar(50) Not Null, 
 						TelefoneCliente Varchar(14) Not Null, 
 						CodigoEndereco Int Not Null, 
 						MomentoPedido DateTime Not Null,) 
 Go
-
-drop Table Cliente
+drop table Cliente
 Go
---Criando a tabela de produtos
+
+--Criando a tabela de produto
 --Obs: Na table original existe o campo imagem que informa o local onde a imagem do produto est� armazenada--
-Create Table Produto (CodigoProduto Int Primary Key Identity(1,1),
+Create Table tb_Produto (CodigoProduto Int Primary Key Identity(1,1),
 						TipoProduto Varchar(50) Not Null,
 						CategoriaProduto Varchar(50) Not Null,
 						NomeProduto Varchar(50) Not Null,
 						DescricaoProduto Varchar(255) Not Null,
 						ValorUnitarioProduto Decimal(18,2) Not Null)
 Go
-drop Table Produto
+
+drop table Produto
 Go
 
---Tabela de relacionamento--
+
+--Criando tabela pedido com relacionamento com as tabelaa cliente e produto--
 --Aqui deixamos a tabela mais elaborada que a original--
-Create Table Pedido (CodigoCliente Int Not Null, 
+Create Table tb_Pedido (CodigoCliente Int Not Null, 
 					CodigoProduto Int Not Null, 
 					Quantidade Int Not Null,
 					ValorUnitario Decimal(18,2) Not Null,
 					ValorTotal As (ValorUnitario * Quantidade))
 Go
-drop Table Pedido
-Go
+
+
 
 --Criando o relacionamento entra a tabelas Cliente e Endereco--
-Alter Table Cliente Add Constraint [FK_Cliente_Endereco]
+Alter Table tb_Cliente Add Constraint [FK_Cliente_Endereco]
                            Foreign Key (CodigoEndereco)
-                           References Endereco (CodigoEndereco)
+                           References tb_Endereco (CodigoEndereco)
 Go
 
 
 --Criando o relacionamento entra a tabelas Pedido e Cliente--
-Alter Table Pedido Add Constraint [FK_Pedido_CodigoCliente]
+Alter Table tb_Pedido Add Constraint [FK_Pedido_CodigoCliente]
                            Foreign Key (CodigoCliente)
-                           References Cliente (CodigoCliente)
+                           References tb_Cliente (CodigoCliente)
 Go
 
 --Criando o relacionamento entra a tabelas Pedido e Produto--
-Alter Table Pedido Add Constraint [FK_Pedido_CodigoProduto]
+Alter Table tb_Pedido Add Constraint [FK_Pedido_CodigoProduto]
                             Foreign Key (CodigoProduto)
-                            References Produto (CodigoProduto)
+                            References tb_Produto (CodigoProduto)
 Go
 
 --Criando chave primaria composta para tabela pedido
-Alter Table Pedido Add Constraint [PK_Pedido_CodigoProduto]
+Alter Table tb_Pedido Add Constraint [PK_Pedido_CodigoProduto]
                             Primary Key (Codigocliente, CodigoProduto)
                             
 Go
 
-Insert Into Produto (TipoProduto, CategoriaProduto, NomeProduto, DescricaoProduto, ValorUnitarioProduto)
+Insert Into tb_Produto (TipoProduto, CategoriaProduto, NomeProduto, DescricaoProduto, ValorUnitarioProduto)
 			 Values ('Massas','Pizza','Alcachofra','Coração da alcachofra temperado. Podendo ser coberta com mussarela especial ou parmesão.', 53.00),
 					('Massas','Pizza','Catupiry','Coberta com o mais puro catupiry.',58.00),
 					('Massas','Pizza','Milho Verde','Milho verde. Podendo ser coberta com mussarela especial ou catupiry.',52.00),
@@ -128,10 +131,10 @@ Insert Into Produto (TipoProduto, CategoriaProduto, NomeProduto, DescricaoProdut
 					('Bebidas','Vinho','Don Patto','Patto Tinto de mesa 720ml',45.00)														
 Go
 
-Insert Into Endereco (TipoLogradouro, Logradouro, Numero , Bairro, Cidade, UF, CEP, Pais, Latitude, Longitude)
+Insert Into tb_Endereco (TipoLogradouro, Logradouro, Numero , Bairro, Cidade, UF, CEP, Pais, Latitude, Longitude)
 Values  ('Rua.'  ,'Gov. Carvalho Pinto'                 ,   538   ,'Jardim Boa Vista'       ,'São Roque'  ,'SP'  ,'18132-380'  ,'Brasil'  ,-23.51784309561113   ,-47.145707197487354),
         ('Rua.'  ,'Paraguai'                            ,   174   ,'Vila Sao Rafael'        ,'São Roque'  ,'SP'  ,'18131-475'  ,'Brasil'  ,-23.53371580879795   ,-47.152799628674984),
-        ('Rua.'  ,'Paulino Hermílio de Campos'          ,    58   ,'Centro, '               ,'São Roque'  ,'SP'  ,'18130-385'  ,'Brasil'  ,-23.53009716835891   ,-47.13880117982625), 
+        ('Rua.'  ,'Paulino Hermílio de Campos'          ,    58   ,'Centro'                 ,'São Roque'  ,'SP'  ,'18130-385'  ,'Brasil'  ,-23.53009716835891   ,-47.13880117982625), 
         ('Rua.'  ,'José Gômide de Castro'               ,   127   ,'Jardim Maria Trindade'  ,'São Roque'  ,'SP'  ,'18133-400'  ,'Brasil'  ,-23.51821231456105   ,-47.126943469047546),
         ('Rua.'  ,'João XXIII'                          ,    64   ,'Centro'                 ,'São Roque'  ,'SP'  ,'18130-180'  ,'Brasil'  ,-23.53264086288481   ,-47.13515404611825), 
         ('Rua.'  ,'Santa Cruz'                          ,   117   ,'Vila Santa Isabel'      ,'São Roque'  ,'SP'  ,'18136-025'  ,'Brasil'  ,-23.536778603376078  ,-47.13693100959063), 
@@ -170,7 +173,7 @@ Values  ('Rua.'  ,'Gov. Carvalho Pinto'                 ,   538   ,'Jardim Boa V
         ('Rua.'  ,'São José'                            ,   205   ,'Jardim Sao Jose'        ,'São Roque'  ,'SP'  ,'18133-255'  ,'Brasil'  ,-23.51485518160395   ,-47.13278565555811), 
         ('BR-.'  ,'272'                                 ,  1325   ,'Taboão'                 ,'São Roque'  ,'SP'  ,'18135-125'  ,'Brasil'  ,-23.542411573883093  ,-47.125645279884345),
         ('Rua.'  ,'Minas Gerais'                        ,   240   ,'Vila Irene'             ,'São Roque'  ,'SP'  ,'18132-080'  ,'Brasil'  ,-23.524010853023483  ,-47.138444781303406),
-        ('Rua.'  ,'Mariápolis'                          ,    40   ,'Bairro Carmo (Canguera)','São Roque'  ,'SP'  ,'18132-380'  ,'Brasil'  ,-23.646257           ,-47.076865),         
+        ('Rua.'  ,'Mariápolis'                          ,    40   ,'Bairro Carmo'           ,'São Roque'  ,'SP'  ,'18132-380'  ,'Brasil'  ,-23.646257           ,-47.076865),         
         ('Rua.'  ,'Ângelo Meneguesso'                   ,   352   ,'Centro'                 ,'São Roque'  ,'SP'  ,'18130-433'  ,'Brasil'  ,-23.5315458          ,-47.1406188),        
         ('Avn.'  ,'Campo Limpo'                         ,    50   ,'Vila Nova'              ,'São Roque'  ,'SP'  ,'18131-320'  ,'Brasil'  ,-23.5252214          ,-47.1524006),        
         ('Rua.'  ,'Sotero de Souza'                     ,   800   ,'Centro'                 ,'São Roque'  ,'SP'  ,'18130-200'  ,'Brasil'  ,-23.535687           ,-47.1376056),        
@@ -188,7 +191,7 @@ Values  ('Rua.'  ,'Gov. Carvalho Pinto'                 ,   538   ,'Jardim Boa V
         ('Rua.'  ,'Santo Antônio'                       ,    39   ,'Jardim Villaca'         ,'São Roque'  ,'SP'  ,'18136-280'  ,'Brasil'  ,-23.547901           ,-47.1236839),        
         ('Rua.'  ,'Lívio Tagliassachi'                  ,   260   ,'Jardim Boa Vista'       ,'São Roque'  ,'SP'  ,'18132-370'  ,'Brasil'  ,-23.5173022          ,-47.142984),         
         ('Rua.'  ,'Paulino Hermílio de Campos'          ,    58   ,'Centro,'                ,'São Roque'  ,'SP'  ,'18130-385'  ,'Brasil'  ,-23.53009716835891   ,-47.13880117982625), 
-        ('Rua.'  ,'Maria Guilhermina Lemos'             ,   175   ,' Vila Junqueira'        ,'São Roque'  ,'SP'  ,'18136-180'  ,'Brasil'  ,-23.541219           ,-47.132667),         
+        ('Rua.'  ,'Maria Guilhermina Lemos'             ,   175   ,'Vila Junqueira'        ,'São Roque'  ,'SP'  ,'18136-180'  ,'Brasil'  ,-23.541219           ,-47.132667),         
         ('Rua.'  ,'Ten. Francisco Luís de Campos'       ,   284   ,'Vila Junqueira,'        ,'São Roque'  ,'SP'  ,'18136-120'  ,'Brasil'  ,-23.538750           ,-47.134115),         
         ('Rua.'  ,'Primeiro de Maio'                    ,    40   ,'Estacao'                ,'São Roque'  ,'SP'  ,'18131-025'  ,'Brasil'  ,-23.534235           ,-47.141057),         
         ('Rua.'  ,'Goiás'                               ,   151   ,'Vila Irene'             ,'São Roque'  ,'SP'  ,'18132-070'  ,'Brasil'  ,-23.523077           ,-47.138289),         
@@ -233,7 +236,7 @@ Values  ('Rua.'  ,'Gov. Carvalho Pinto'                 ,   538   ,'Jardim Boa V
         ('Rua.'  ,'José Vitório Cavalheiros'            ,   127   ,'Jardim Maria Trindade'  ,'São Roque'  ,'SP'  ,'18133-420'  ,'Brasil'  ,-23.51883054647095   ,-47.12518058717251), 
         ('Rua.'  ,'Ida'                                 ,   154   ,'Vila Santo Antonio'     ,'São Roque'  ,'SP'  ,'18133-290'  ,'Brasil'  ,-23.5151380202832    ,-47.132128179073334),
         ('Avn.'  ,'Anhanguera'                          ,   166   ,'Jardim Bandeirantes'    ,'São Roque'  ,'SP'  ,'18134-240'  ,'Brasil'  ,-23.52378951598343   ,-47.1325982362032),  
-        ('Rua.'  ,'Paulino Hermílio de Campos'          ,   116   ,'Centro '                ,'São Roque'  ,'SP'  ,'18130-385'  ,'Brasil'  ,-23.530205372438676  ,-47.13948681950569), 
+        ('Rua.'  ,'Paulino Hermílio de Campos'          ,   116   ,'Centro'                 ,'São Roque'  ,'SP'  ,'18130-385'  ,'Brasil'  ,-23.530205372438676  ,-47.13948681950569), 
         ('Rua.'  ,'Joaquim Silveira Mello'              ,   209   ,'Jardim Carambei'        ,'São Roque'  ,'SP'  ,'18132-170'  ,'Brasil'  ,-23.523613675736318  ,-47.14176636189222), 
         ('Rua.'  ,'Cardeal'                             ,   432   ,'Guaçu'                  ,'São Roque'  ,'SP'  ,'18132-655'  ,'Brasil'  ,-23.509749838999195  ,-47.14945625513792), 
         ('Rua.'  ,'Araras'                              ,   118   ,'Jardim Carambei'        ,'São Roque'  ,'SP'  ,'18132-270'  ,'Brasil'  ,-23.521246572621433  ,-47.14085709303617), 
@@ -295,7 +298,7 @@ Values  ('Rua.'  ,'Gov. Carvalho Pinto'                 ,   538   ,'Jardim Boa V
         ('Rua.'  ,'Francisco da Silva Pontes'           ,   103   ,'Jardim Florida'         ,'São Roque'  ,'SP'  ,'18133-040'  ,'Brasil'  ,-23.520508           ,-47.133294),         
         ('Rua.'  ,'Antônio Cavaglieri'                  ,    65   ,'Centro'                 ,'São Roque'  ,'SP'  ,'18130-065'  ,'Brasil'  ,-23.533422           ,-47.139856),         
         ('Rua.'  ,'José F Rodrigues'                    ,    75   ,'Jardim Vinhas do Sol'   ,'São Roque'  ,'SP'  ,'18143-665'  ,'Brasil'  ,-23.56468935015538   ,-47.08935834467411), 
-        ('Rua.'  ,'Profa. Célia Asse Jacob'             ,     3   ,'Centro (Mailasqui)'     ,'São Roque'  ,'SP'  ,'18143-073'  ,'Brasil'  ,-23.556351876996285  ,-47.09145314991475), 
+        ('Rua.'  ,'Profa. Célia Asse Jacob'             ,     3   ,'Centro'                 ,'São Roque'  ,'SP'  ,'18143-073'  ,'Brasil'  ,-23.556351876996285  ,-47.09145314991475), 
         ('Rua.'  ,'Paraguai'                            ,   250   ,'Vila Sao Rafael'        ,'São Roque'  ,'SP'  ,'18131-475'  ,'Brasil'  ,-23.53371580879795   ,-47.152799628674984),
         ('Rua.'  ,'Ten. Francisco Luís de Campos'       ,   332   ,'Vila Junqueira'         ,'São Roque'  ,'SP'  ,'18136-120'  ,'Brasil'  ,-23.53877595949601   ,-47.1328305825591),  
         ('Rua.'  ,'José Bonifácio de Andrada e Silva'   ,   220   ,'Jardim Meny'            ,'São Roque'  ,'SP'  ,'18130-005'  ,'Brasil'  ,-23.53514147415779   ,-47.13589802384377), 
@@ -476,7 +479,7 @@ Values  ('Rua.'  ,'Gov. Carvalho Pinto'                 ,   538   ,'Jardim Boa V
 
 Go
 
-Insert Into Cliente (NomeCliente, TelefoneCliente, CodigoEndereco, MomentoPedido )
+Insert Into tb_Cliente (NomeCliente, TelefoneCliente, CodigoEndereco, MomentoPedido )
 					--Abertura da pizzaria 2021-04-01 19:00:00.000 Quinta feira--
 			Values  ('Edson'     ,'11-952453521' ,  1  ,'2021-04-01 18:30:00.000' ),--2,22
 			    	('Mariza'    ,'11-954895352' ,  2  ,'2021-04-01 19:05:00.000' ),--11,40
@@ -825,7 +828,7 @@ Insert Into Cliente (NomeCliente, TelefoneCliente, CodigoEndereco, MomentoPedido
 Go
 
 
-Insert Into Pedido (CodigoCliente, CodigoProduto, Quantidade, ValorUnitario)
+Insert Into tb_Pedido (CodigoCliente, CodigoProduto, Quantidade, ValorUnitario)
 					Values  (  1 ,11  ,1  ,53),
                             (  1 ,40  ,1  ,45),
                             (  2 , 3  ,1  ,52),
