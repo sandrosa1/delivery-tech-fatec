@@ -24,9 +24,6 @@ Create Table tb_Endereco (CodigoEndereco Int Primary Key Identity(1,1),
                                 Longitude Float Not Null)
 Go
 
-drop table Endereco
-Go
-
 --Criando a tabela de Cliente--
 --Obs: Na table original existe o campo status que verifica se o pedido foi entregue--
 Create Table tb_Cliente (CodigoCliente Int Primary Key Identity(1,1), 
@@ -34,8 +31,6 @@ Create Table tb_Cliente (CodigoCliente Int Primary Key Identity(1,1),
 						TelefoneCliente Varchar(14) Not Null, 
 						CodigoEndereco Int Not Null, 
 						MomentoPedido DateTime Not Null,) 
-Go
-drop table Cliente
 Go
 
 --Criando a tabela de produto
@@ -48,10 +43,6 @@ Create Table tb_Produto (CodigoProduto Int Primary Key Identity(1,1),
 						ValorUnitarioProduto Decimal(18,2) Not Null)
 Go
 
-drop table Produto
-Go
-
-
 --Criando tabela pedido com relacionamento com as tabelaa cliente e produto--
 --Aqui deixamos a tabela mais elaborada que a original--
 Create Table tb_Pedido (CodigoCliente Int Not Null, 
@@ -61,14 +52,11 @@ Create Table tb_Pedido (CodigoCliente Int Not Null,
 					ValorTotal As (ValorUnitario * Quantidade))
 Go
 
-
-
 --Criando o relacionamento entra a tabelas Cliente e Endereco--
 Alter Table tb_Cliente Add Constraint [FK_Cliente_Endereco]
                            Foreign Key (CodigoEndereco)
                            References tb_Endereco (CodigoEndereco)
 Go
-
 
 --Criando o relacionamento entra a tabelas Pedido e Cliente--
 Alter Table tb_Pedido Add Constraint [FK_Pedido_CodigoCliente]
