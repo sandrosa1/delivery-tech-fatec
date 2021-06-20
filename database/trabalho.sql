@@ -47,28 +47,42 @@ Go
 
 
 
----------Sandro-----------
+---------Sandro----------
+
+--Calculando o tamanho das tabelas--
+Exec sp_spaceused [tb_Produto]
+Exec sp_spaceused [tb_Pedido]
+Exec sp_spaceused [tb_Cliente]
+Exec sp_spaceused [tb_Endereco]
+Go
 
 
 -- Listando todos os clientes e seus pedidos  --
-Select * From tb_Cliente C Inner Join tb_Pedido P On C.CodigoCliente = P.CodigoCliente
+Select * From tb_Cliente C Inner Join tb_Pedido P On C.CodigoCliente = P.CodigoClientePedido
 Go
-
 
 --Calculando o valor total de cada pedido--
 Select * From tb_Cliente C
-Cross Apply (Select SUM(ValorTotal) AS Somatoria From tb_Pedido P
-                        Where C.CodigoCliente = P.CodigoCliente) As R
+Cross Apply (Select SUM(ValorTotalPedido) AS [Valor Total do Pedido] From tb_Pedido P
+                        Where C.CodigoCliente = P.CodigoClientePedido) As R
 Go
 
---Consultando o Valor do faturamento bruto do Mes--
-Select SUM(ValorTotal) As [Faturamento do Mês] From tb_Pedido
+--Buscando o cliente que mais gastou em um pedido no delivery--
+Select Top 5 NomeCliente, TelefoneCliente, [Mais Gasta] from tb_Cliente C
+Cross Apply (Select SUM(ValorTotalPedido) AS [Mais Gasta] From tb_Pedido P
+                        Where C.CodigoCliente = P.CodigoClientePedido) As R
+						Order By [Mais Gasta] Desc
 Go
 
-
---Calculando o tamanho da tabela de pedido--
-Exec sp_spaceused 'tb_Pedido'
+--Sera que existe outra Bruna ?---
+Select * From tb_Cliente C Inner Join tb_Pedido P On C.CodigoCliente = P.CodigoClientePedido
+Where C.NomeCliente = 'Bruna'
 Go
+
+--Consultando o Valor do faturamento bruto--
+Select SUM(ValorTotalPedido) As [Faturamento] From tb_Pedido
+Go
+
 ---------------------------------------------------------------------------------------------------------------------------------
 --	Verificando os Produtos mais caros do estabelecimento
 
@@ -94,23 +108,30 @@ Where
 	[Mais Caros] <= 5
 Go
 ---------------------------------------------------------------------------------------------------------------------------------
---Descobrindo nosso melhor cliente---
-Create View V_MelhorCliente
+--Descobrindo qual cliente faz mais pedidos---
+Create View V_MelhorCliente3
 As
-Select NomeCliente, TelefoneCliente, TipoLogradouro, Logradouro, Numero, Bairro
-From tb_Cliente  C Inner Join tb_Endereco E
-On C.CodigoCliente = E.CodigoEndereco
+Select NomeCliente, TelefoneCliente, MomentoPedido, ValorTotalPedido, TipoLogradouro, Logradouro, Numero, Bairro
+From tb_Cliente  C Inner Join tb_Endereco E On C.CodigoCliente = E.CodigoEndereco
+					Inner Join tb_Pedido P On C.CodigoCliente = P.CodigoClientePedido
 Go
 
-Select TelefoneCliente, Count(1) ocorrencias From V_MelhorCliente Group By TelefoneCliente
+--Buscando qual telefone foi mais disponibilizado
+Select TelefoneCliente, Count(1) ocorrencias From V_MelhorCliente3 Group By TelefoneCliente
 Having Count(1)  > 1
 Order By 2 Desc
 Go
 
-Select * From V_MelhorCliente
+--Atravéis do telefone localizamos o cliente
+Select * From V_MelhorCliente3
 Where TelefoneCliente = '11-997362682'
-order by NomeCliente
 Go
+
+--Valor total que o cliente j gastou
+Select SUM(ValorTotalPedido) As [Valor Total] From V_MelhorCliente2
+Where TelefoneCliente = '11-997362682'
+Go
+
 ---------------------------------------------------------------------------------------------------------------------------------
 --Indentificando os bairros que mais consomem --
 Create View V_MelhorRegiaoDeConsumo
@@ -123,10 +144,6 @@ Having Count(1)  > 1
 Order By 2 Desc
 Go
 
-Select * From V_MelhorCliente
-Where TelefoneCliente = '11-997362682'
-order by NomeCliente
-Go
 ----------------------------------------------------------------------------------------------------------------------------------
 --Criando uma visão com os dados pertinentes para a entrega--
 Create View V_EnderecoCliente
@@ -145,3 +162,4 @@ Having Count(1)  > 1
 Order By 2 Desc
 Go
 
+-- Eliminar duplicidade
