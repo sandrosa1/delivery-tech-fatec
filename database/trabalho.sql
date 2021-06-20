@@ -7,6 +7,31 @@ Go
 
 
 ------------Carol---------
+-- Utilizando Funções defindas pelo Usuário (User Defined Functions)
+-- Função Multi-Statement  para retornar os Pedidos para cada produto .
+CREATE FUNCTION F_RetornaPedidosPorCliente(@CodigoCliente Int)
+RETURNS @Resultado Table
+		(CodigoProduto Int, 
+		NomeCliente Varchar(50),
+		MomentoPedido DateTime)
+AS
+BEGIN
+ INSERT @Resultado
+ SELECT PE.CodigoProduto, CL.NomeCliente, CL.MomentoPedido
+ FROM tb_Pedido PE INNER JOIN tb_Cliente CL
+				 ON PE.CodigoCliente = CL.CodigoCliente
+ WHERE PE.CodigoCliente = @CodigoCliente
+ RETURN
+END
+GO
+
+-- Listando todos os produtos pedidos pelo cliente e a data
+select * from F_RetornaPedidosPorCliente(3)
+Go
+
+-- Mostrando a quantidade total de pedidos realizados até o momento pelo cliente
+select count(*) from F_RetornaPedidosPorCliente(3)
+Go
 
 
 
