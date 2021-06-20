@@ -45,11 +45,11 @@ Go
 
 --Criando tabela pedido com relacionamento com as tabelaa cliente e produto--
 --Aqui deixamos a tabela mais elaborada que a original--
-Create Table tb_Pedido (CodigoCliente Int Not Null, 
-					CodigoProduto Int Not Null, 
-					Quantidade Int Not Null,
-					ValorUnitario Decimal(18,2) Not Null,
-					ValorTotal As (ValorUnitario * Quantidade))
+Create Table tb_Pedido (CodigoClientePedido Int Not Null, 
+					CodigoProdutoPedido Int Not Null, 
+					QuantidadePedido Int Not Null,
+					ValorUnitarioPedido Decimal(18,2) Not Null,
+					ValorTotalPedido As (ValorUnitarioPedido * QuantidadePedido))
 Go
 
 --Criando o relacionamento entra a tabelas Cliente e Endereco--
@@ -60,19 +60,19 @@ Go
 
 --Criando o relacionamento entra a tabelas Pedido e Cliente--
 Alter Table tb_Pedido Add Constraint [FK_Pedido_CodigoCliente]
-                           Foreign Key (CodigoCliente)
+                           Foreign Key (CodigoClientePedido)
                            References tb_Cliente (CodigoCliente)
 Go
 
 --Criando o relacionamento entra a tabelas Pedido e Produto--
 Alter Table tb_Pedido Add Constraint [FK_Pedido_CodigoProduto]
-                            Foreign Key (CodigoProduto)
+                            Foreign Key (CodigoProdutoPedido)
                             References tb_Produto (CodigoProduto)
 Go
 
 --Criando chave primaria composta para tabela pedido
 Alter Table tb_Pedido Add Constraint [PK_Pedido_CodigoProduto]
-                            Primary Key (Codigocliente, CodigoProduto)
+                            Primary Key (CodigoclientePedido, CodigoProdutoPedido)
                             
 Go
 
@@ -816,7 +816,7 @@ Insert Into tb_Cliente (NomeCliente, TelefoneCliente, CodigoEndereco, MomentoPed
 Go
 
 
-Insert Into tb_Pedido (CodigoCliente, CodigoProduto, Quantidade, ValorUnitario)
+Insert Into tb_Pedido (CodigoClientePedido, CodigoProdutoPedido, QuantidadePedido, ValorUnitarioPedido)
 					Values  (  1 ,11  ,1  ,53),
                             (  1 ,40  ,1  ,45),
                             (  2 , 3  ,1  ,52),
