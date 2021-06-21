@@ -8,19 +8,19 @@ Go
 
 ------------Carol---------
 -- Utilizando Funções defindas pelo Usuário (User Defined Functions)
--- Função Multi-Statement  para retornar os Pedidos para cada produto .
+-- Função Multi-Statement  para retornar todos os Pedidos feitos por cliente .
 CREATE FUNCTION F_RetornaPedidosPorCliente(@CodigoCliente Int)
 RETURNS @Resultado Table
-		(CodigoProduto Int, 
+		(CodigoProdutoPedido  Int, 
 		NomeCliente Varchar(50),
 		MomentoPedido DateTime)
 AS
 BEGIN
  INSERT @Resultado
- SELECT PE.CodigoProduto, CL.NomeCliente, CL.MomentoPedido
+ SELECT PE.CodigoProdutoPedido, CL.NomeCliente, CL.MomentoPedido
  FROM tb_Pedido PE INNER JOIN tb_Cliente CL
-				 ON PE.CodigoCliente = CL.CodigoCliente
- WHERE PE.CodigoCliente = @CodigoCliente
+				 ON PE.CodigoClientePedido = CL.CodigoCliente
+ WHERE PE.CodigoClientePedido = @CodigoCliente
  RETURN
 END
 GO
@@ -33,8 +33,32 @@ Go
 select count(*) from F_RetornaPedidosPorCliente(3)
 Go
 
+-- Função Multi-Statement para retornar todos os Pedidos por Bairro.
+CREATE FUNCTION F_RetornaPedidosPorBairro(@Bairro Varchar(30))
+RETURNS @Regioes Table
+		(CodigoEndereco Int,
+		 Bairro Varchar(30),
+		 TipoLogradouro Varchar(5),
+		 Logradouro Varchar(100),
+		 MomentoPedido DateTime)
+AS
+BEGIN
+ INSERT @Regioes
+ SELECT EN.CodigoEndereco, EN.Bairro, EN.TipoLogradouro, EN.Logradouro, CL.MomentoPedido
+ FROM tb_Endereco EN INNER JOIN tb_Cliente CL
+					 ON EN.CodigoEndereco = CL.CodigoEndereco
+					 INNER JOIN tb_Pedido PE
+					 ON CL.CodigoCliente = PE.CodigoClientePedido
+WHERE EN.Bairro = @Bairro
+RETURN
+END
+GO
 
+select * from F_RetornaPedidosPorBairro('Centro')
+Go
 
+select count(*) from F_RetornaPedidosPorBairro('Centro')
+Go
 
 ----------Nestor----------
 
