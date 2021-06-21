@@ -30,7 +30,7 @@ select * from F_RetornaPedidosPorCliente(3)
 Go
 
 -- Mostrando a quantidade total de pedidos realizados até o momento pelo cliente
-select count(*) from F_RetornaPedidosPorCliente(3)
+select count(*) as 'Quantidade de pedidos realizados' from F_RetornaPedidosPorCliente(3) 
 Go
 
 -- Função Multi-Statement para retornar todos os Pedidos por Bairro.
@@ -67,6 +67,62 @@ Go
 
 ----------Rafael-------------
 
+-- Verificando os produtos que mais foram pedidos
+Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia, SUM(A.ValorTotalPedido) as 
+			from dbo.tb_Pedido A
+					Inner Join dbo.tb_Produto B on  B.CodigoProduto = A.CodigoProdutoPedido
+					Group by B.NomeProduto, B.TipoProduto
+					Order By [Ocorrencia] Desc
+
+Go
+
+-- Verificando os produtos que foram menos foram pedidos --
+Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia
+			from dbo.tb_Pedido A
+					Inner Join dbo.tb_Produto B on  B.CodigoProduto = A.CodigoProdutoPedido
+					Group by B.NomeProduto, B.TipoProduto
+					Order By [Ocorrencia] Asc
+
+Go
+
+-- Verificando a Pizza mais pedida --
+Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia
+			from dbo.tb_Pedido A
+					Inner Join dbo.tb_Produto B on  B.CodigoProduto = A.CodigoProdutoPedido
+					Where B.TipoProduto = 'Massas'
+					Group by B.NomeProduto, B.TipoProduto
+					Order By [Ocorrencia] Desc
+
+Go
+
+-- Verificando a Pizza menos Pedida --
+Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia
+			from dbo.tb_Pedido A
+					Inner Join dbo.tb_Produto B on  B.CodigoProduto = A.CodigoProdutoPedido
+					Where B.TipoProduto = 'Massas'
+					Group by B.NomeProduto, B.TipoProduto
+					Order By [Ocorrencia] Asc
+
+Go
+
+-- Verificando a Bebida mais Pedida -- 
+Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia
+			from dbo.tb_Pedido A
+					Inner Join dbo.tb_Produto B on  B.CodigoProduto = A.CodigoProdutoPedido
+					Where B.TipoProduto = 'Bebidas'
+					Group by B.NomeProduto, B.TipoProduto
+					Order By [Ocorrencia] Desc
+
+Go
+
+-- Verificando o valor total arrecadado dos Produtos mais pedidos
+Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia, A.ValorUnitarioPedido as 'Valor Unitario',SUM(A.ValorUnitarioPedido) as 'Total Arrecadado'
+			from dbo.tb_Pedido A
+					Inner Join dbo.tb_Produto B on  B.CodigoProduto = A.CodigoProdutoPedido
+					Group by B.NomeProduto, B.TipoProduto,A.ValorUnitarioPedido
+					Order By [Ocorrencia] Desc
+
+Go
 
 
 
@@ -111,7 +167,7 @@ Go
 --	Verificando os Produtos mais caros do estabelecimento
 
 --Aqui Temos um problema---
-Select Top 5 NomeProduto, ValorUnitarioProduto  As [Mais Caros]
+Select Top 5 TipoProduto, NomeProduto, ValorUnitarioProduto  As [Mais Caros]
 From tb_Produto
 Order By [Mais Caros] Desc
 Go
@@ -152,7 +208,7 @@ Where TelefoneCliente = '11-997362682'
 Go
 
 --Valor total que o cliente j gastou
-Select SUM(ValorTotalPedido) As [Valor Total] From V_MelhorCliente2
+Select SUM(ValorTotalPedido) As [Valor Total] From V_MelhorCliente
 Where TelefoneCliente = '11-997362682'
 Go
 
