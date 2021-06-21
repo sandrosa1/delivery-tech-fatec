@@ -68,7 +68,7 @@ Go
 ----------Rafael-------------
 
 -- Verificando os produtos que mais foram pedidos
-Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia, SUM(A.ValorTotalPedido) as 
+Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia
 			from dbo.tb_Pedido A
 					Inner Join dbo.tb_Produto B on  B.CodigoProduto = A.CodigoProdutoPedido
 					Group by B.NomeProduto, B.TipoProduto
@@ -95,16 +95,6 @@ Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia
 
 Go
 
--- Verificando a Pizza menos Pedida --
-Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia
-			from dbo.tb_Pedido A
-					Inner Join dbo.tb_Produto B on  B.CodigoProduto = A.CodigoProdutoPedido
-					Where B.TipoProduto = 'Massas'
-					Group by B.NomeProduto, B.TipoProduto
-					Order By [Ocorrencia] Asc
-
-Go
-
 -- Verificando a Bebida mais Pedida -- 
 Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia
 			from dbo.tb_Pedido A
@@ -116,13 +106,30 @@ Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia
 Go
 
 -- Verificando o valor total arrecadado dos Produtos mais pedidos
-Select B.NomeProduto, B.TipoProduto, Count(A.CodigoProdutoPedido) as Ocorrencia, A.ValorUnitarioPedido as 'Valor Unitario',SUM(A.ValorUnitarioPedido) as 'Total Arrecadado'
+Select B.CodigoProduto, B.NomeProduto, Count(A.CodigoProdutoPedido) as Ocorrencia,B.ValorUnitarioProduto as 'Valor Unitário', SUM(A.ValorUnitarioPedido) as 'Total Arrecadado'
 			from dbo.tb_Pedido A
 					Inner Join dbo.tb_Produto B on  B.CodigoProduto = A.CodigoProdutoPedido
-					Group by B.NomeProduto, B.TipoProduto,A.ValorUnitarioPedido
+					Group by B.NomeProduto, B.TipoProduto, B.CodigoProduto,B.ValorUnitarioProduto
 					Order By [Ocorrencia] Desc
 
 Go
+
+
+-- Total de Venda diária --
+Select  DAY(A.MomentoPedido) as Dia, MONTH(A.MomentoPedido) as Mes, Sum(B.ValorTotalPedido) as TotalVendaDia 
+			from dbo.tb_Cliente A
+					Inner Join dbo.tb_Pedido B on  B.CodigoClientePedido = A.CodigoCliente
+					Group by DAY(A.MomentoPedido), MONTH(A.MomentoPedido)
+Go
+
+
+-- Total de Venda Mensal --
+Select   MONTH(A.MomentoPedido) as Mes, Sum(B.ValorTotalPedido) as TotalVendaMes
+			from dbo.tb_Cliente A
+					Inner Join dbo.tb_Pedido B on  B.CodigoClientePedido = A.CodigoCliente
+					Group by  MONTH(A.MomentoPedido)
+Go
+
 
 
 
