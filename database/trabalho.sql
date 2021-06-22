@@ -8,57 +8,74 @@ Go
 
 ------------Carol---------
 -- Utilizando Funções defindas pelo Usuário (User Defined Functions)
--- Função Multi-Statement  para retornar todos os Pedidos feitos por cliente .
+-- Função Multi-Statement para retornar todos os itens de Pedidos feitos por cliente .
 CREATE FUNCTION F_RetornaPedidosPorCliente(@CodigoCliente Int)
 RETURNS @Resultado Table
-		(CodigoProdutoPedido  Int, 
+		(CodigoProdutoPedido Int,
+		Categoria Varchar(50),
+		NomeProduto Varchar (50),
+		Quantidade INT,
 		NomeCliente Varchar(50),
 		MomentoPedido DateTime)
 AS
 BEGIN
  INSERT @Resultado
- SELECT PE.CodigoProdutoPedido, CL.NomeCliente, CL.MomentoPedido
+ SELECT PE.CodigoProdutoPedido, PR.CategoriaProduto, PR.NomeProduto, PE.QuantidadePedido,CL.NomeCliente, CL.MomentoPedido
  FROM tb_Pedido PE INNER JOIN tb_Cliente CL
 				 ON PE.CodigoClientePedido = CL.CodigoCliente
+				 INNER JOIN tb_Produto PR
+				 ON PR.CodigoProduto = PE.CodigoProdutoPedido
  WHERE PE.CodigoClientePedido = @CodigoCliente
  RETURN
 END
 GO
 
 -- Listando todos os produtos pedidos pelo cliente e a data
-select * from F_RetornaPedidosPorCliente(3)
-Go
+SELECT * FROM F_RetornaPedidosPorCliente(111)
+GO
 
 -- Mostrando a quantidade total de pedidos realizados até o momento pelo cliente
-select count(*) as 'Quantidade de pedidos realizados' from F_RetornaPedidosPorCliente(3) 
-Go
+SELECT SUM(Quantidade) AS 'Quantidade de itens pedidos' FROM F_RetornaPedidosPorCliente(111) 
+GO
 
--- Função Multi-Statement para retornar todos os Pedidos por Bairro.
+-- Mostrando a quantidade total de pedidos realizados após determinada data
+SELECT SUM(Quantidade) AS 'Quantidade de itens pedidos' FROM F_RetornaPedidosPorCliente(111) 
+where MomentoPedido >= CONVERT(DATETIME, '2021-04-01' )
+GO
+
+-- Função Multi-Statement para retornar todos itens de Pedidos por Bairro.
 CREATE FUNCTION F_RetornaPedidosPorBairro(@Bairro Varchar(30))
 RETURNS @Regioes Table
 		(CodigoEndereco Int,
 		 Bairro Varchar(30),
 		 TipoLogradouro Varchar(5),
 		 Logradouro Varchar(100),
-		 MomentoPedido DateTime)
+		 MomentoPedido DateTime,
+		 CategoriaProduto Varchar(50),
+		 NomeProduto Varchar(50),
+		 Quantidade INT)
 AS
 BEGIN
  INSERT @Regioes
- SELECT EN.CodigoEndereco, EN.Bairro, EN.TipoLogradouro, EN.Logradouro, CL.MomentoPedido
+ SELECT EN.CodigoEndereco, EN.Bairro, EN.TipoLogradouro, EN.Logradouro, CL.MomentoPedido, PR.CategoriaProduto, PR.NomeProduto, PE.QuantidadePedido
  FROM tb_Endereco EN INNER JOIN tb_Cliente CL
 					 ON EN.CodigoEndereco = CL.CodigoEndereco
 					 INNER JOIN tb_Pedido PE
 					 ON CL.CodigoCliente = PE.CodigoClientePedido
+					 INNER JOIN tb_Produto PR
+					 ON PE.CodigoProdutoPedido = PR.CodigoProduto
 WHERE EN.Bairro = @Bairro
 RETURN
 END
 GO
 
-select * from F_RetornaPedidosPorBairro('Centro')
-Go
+-- Mostra os itens pedidos por bairro
+SELECT * FROM F_RetornaPedidosPorBairro('Centro')
+GO
 
-select count(*) from F_RetornaPedidosPorBairro('Centro')
-Go
+-- Mostra o número de itens pedidos por bairro
+SELECT SUM(Quantidade) AS 'Quantidade de itens pedidos' FROM F_RetornaPedidosPorBairro('Centro')
+GO
 
 ----------Nestor----------
 
